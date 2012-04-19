@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://www.dppl.org/tests/dpm/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+	  div.span4, div.span7, div.span5{min-height: 350px; border-bottom: 1px solid #F6F6F6; position: relative;}
+	  a.btn{position: absolute; left: 0; bottom: 10px;}
+	  .access-alert{position: absolute; left: 0; bottom: 30px; margin-top: 1em;}
+    </style>
+    <link href="http://www.dppl.org/tests/dpm/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.dppl.org/tests/dpm/bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.dppl.org/tests/dpm/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.dppl.org/tests/dpm/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.dppl.org/tests/dpm/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <!--<a class="brand" href="/cdm/">Des Plaines Memory</a>-->
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="/cdm/">Home</a></li>
+			  <li><a href="/cdm/search">Browse All</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+		<div class="hero-unit" style="background: url('http://www.dppl.org/tests/dpm/des-plaines-memory-header-final-long.png') no-repeat top left; ">
+		<h1 style="display: none;">Des Plaines Memory</h1>
+		</div>
+		<div class="row-fluid">
+			<div class="span9">
+				<div class="row-fluid">
+					<div class="span7">
+						<img src="http://www.dppl.org/tests/dpm/DPM-History2.jpg" style="width: 99%; text-align: center; padding-bottom: 1em;" />
+						<h2><a href="/cdm/search/collection/p15770coll1" style="color: #63af00">Des Plaines History</a></h2>
+						<p>A collection for Des Plaines History</p>
+						<p>
+							<a class="btn" href="/cdm/search/collection/p15770coll1">View Collection</a>
+						</p>
+					</div>
+					<div class="span5">
+						<img src="http://www.dppl.org/tests/dpm/DPM-Newspapers2.jpg" style="width: 99%; text-align: center; padding-bottom: 1em;" />
+						<h2><a href="/cdm/search/collection/p15770coll3" style="color: #63af00">Local Newspapers</a></h2>
+						<p>A collection for Des Plaines newspapers.</p>
+						<p class="alert access-alert">This collection can only be used at DPPL and DPHC</p>
+						<p>
+							<a class="btn" href="/cdm/search/collection/p15770coll3">View Collection</a>
+						</p>
+					</div>
+				</div>
+				<div class="row-fluid" style="margin-top: 3em;">
+					<div class="span4">
+						<img src="http://www.dppl.org/tests/dpm/DPM-Directories2.jpg" style="width: 99%; text-align: center; padding-bottom: 1em;" />
+						<h2><a href="/cdm/search/collection/p15770coll4" style="color: #63af00">Telephone Directories</a></h2>
+						<p>This collection brings together telephone directories from Des Plaines and the surrounding communities. The directories are a great tool for doing genealogical and historical research.</p>
+						<p class="alert access-alert">This collection can only be used at DPPL and DPHC <br /><img src="http://www.dppl.org/tests/dpm/access-icons.png" /></p>
+						<p>
+							<a class="btn" href="/cdm/search/collection/p15770coll4">View Collection</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="well sidebar-nav" style="background-color: #f7fdec;">
+					<p>Welcome to Des Plaines Memory, a collaboration between the Des Plaines Public Library and the Des Plaines History Center.</p>
+					<hr />
+					<p>Please explore our collections. You will find everything from pictures of old homes to street scenes in Des Plaines.</p>
+					<p>If you find something that you like, share it with the "Share" option above the image or leave a comment.</p>
+					<hr />
+					<address><a href="http://www.dppl.org/home/index.shtml" target="_blank" style="color: #63af00"><strong>Des Plaines Public Library</strong><br /></a>1501 Ellinwood Street<br />Des Plaines, Illinois 60016<br />847.827.5551</address>
+					<address><a href="http://www.desplaineshistory.org/" target="_blank" style="color: #63af00"><strong>Des Plaines History Center</strong><br /></a>781 Pearson Street<br />Des Plaines, Illinois 60016<br />847.391.5399</address>
+				</div>
+			</div>
+		</div>
+		<footer style="min-height: 300px; background: url('http://www.dppl.org/tests/dpm/des-plaines-memory-footer.png') no-repeat bottom left; -webkit-border-radius: 0 6px;-moz-border-radius: 0 6px; border-radius: 0 6px;">
+			<div>
+				<a href="http://www.dppl.org/">Des Plaines Public Library</a>
+			</div>
+			<div>
+				<a href="http://www.desplaineshistory.org/">Des Plaines History Center</a>
+			</div>
+		</footer>
+	</div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/jquery.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-button.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="http://www.dppl.org/tests/dpm/bootstrap/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
