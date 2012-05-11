@@ -115,7 +115,7 @@ a:hover {
 /* directional copy #525252 */
 
 .body_text_10 {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
 	color: #333;
 	font-weight: normal;
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .body_text_11 {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
 	color: #333;
 	font-weight: normal;
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .action_link_10 {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #63af00;
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .action_link_11 {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #63af00;
@@ -163,7 +163,7 @@ a:hover {
 }
 
 .body_link_10 {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #63af00;
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .body_link_11 {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #63af00;
@@ -212,7 +212,7 @@ a:hover {
 p.cdm_style { line-height: 135%; }
 
 h1.cdm_style {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #333;
 	font-size: 18px;
 	font-weight: bold;
@@ -222,7 +222,7 @@ h1.cdm_style {
 }
 
 h2.cdm_style {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #333;
 	font-size: 13px;
 	font-weight: bold;
@@ -232,7 +232,7 @@ h2.cdm_style {
 }
 
 h3.cdm_style {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #999;
 	font-size: 13px;
 	font-weight: bold;
@@ -377,7 +377,7 @@ html body span.clear {
 	border: 0; 
 	border-width: 1px 0 1px 0;
 	overflow: hidden;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 }
 
@@ -456,7 +456,8 @@ html body span.clear {
 	background-color: #333;
 	letter-spacing: 0.3px;
 	float: left;
-	
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 }
 
 #nav_top_left>ul.nav li a {
@@ -474,7 +475,7 @@ html body span.clear {
 
 #nav_footer_left>ul.nav li a, #nav_footer_right>ul.nav li a {
 	height: 30px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #999;
@@ -530,6 +531,7 @@ html body span.clear {
 .nav_li_right_1 {
 	color: #999;
 	background-color: #333;
+	font-size: 13px;
 }
 
 .nav_li_right_1a { color: #999; }
@@ -563,7 +565,7 @@ html body span.clear {
 
 #nav_top_left_browse_dd_content {
 	width: 290px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #0066CC;
 	background-color: #FFFFFF;
@@ -621,7 +623,7 @@ html body span.clear {
 
 #nav_top_right_language_dd_content {
 	width: 100%;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -656,7 +658,7 @@ html body span.clear {
 }
 
 #search_sort_by_dd_content {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -676,7 +678,7 @@ html body span.clear {
 
 #search_display_dd_content {
 	width: 120px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -694,7 +696,7 @@ html body span.clear {
 }
 
 #search_results_dd_content {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -731,7 +733,7 @@ html body span.clear {
 
 #reference_url_dd_content {
 	width: 80px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	background-color: #FFFFFF;
 	border: 1px solid #CCCCCC;
@@ -752,12 +754,12 @@ html body span.clear {
 }
 
 #search_content {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 7px 0 0 30px;
 	clear: both;
 }
 
-#search_content input{height: auto;}
+.search_content_button
 
 .search_content_container, .search_content_container_advanced {
 	height: 100%;
@@ -781,13 +783,14 @@ html body span.clear {
 #search_content_text {
 	display: block;
 	color: #000;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
 	font-weight: normal;
 	margin: 5px 5px 0 0;
 }
 
 #search_content_box {
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 	color: #000;
 }
 
@@ -822,25 +825,25 @@ html body span.clear {
 
 .search_content_button_link {
 	height: 15px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 10px;
 	color: #000000;
 	border: 0;
 	margin: 0;
 	margin-top: 1px;
-	text-decoration: none;
+	text-decoration: underline;
 	vertical-align: top;
 }
 
 .search_within_results_li {
 	float: left;
-	margin-top: 2px;
+	padding-top: 8px;
 }
 
 #search_results_button_arrow {
-	margin-left: 0;
+	margin-left: 1px;
 	cursor: pointer;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 .search_results_list {
@@ -849,9 +852,17 @@ html body span.clear {
 	padding: 0;
 }
 
-.search_content_button {
+.search_content_button{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  padding-right: 3px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*.search_content_button {
 	height: 18px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 10px;
 	text-align: center;
@@ -875,7 +886,7 @@ html body span.clear {
 .search_content_button_active {
 	background-color: #191970;
 	border: 1px solid #191970;
-}
+}*/
 
 .search_content_button_disabled {
 	background-color: #B0C8DC;
@@ -889,7 +900,7 @@ html body span.clear {
 }
 
 #adv_search {
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #F6F6F6;
 	display: none;
 	border-bottom: solid #dddddd 2px;
@@ -975,7 +986,7 @@ ul.suggested_word_list { list-style-type: none; }
 a.suggested_word {
 	color: green;
 	font-size: 11px;
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 }
 
 a.suggested_word_selected {
@@ -1040,9 +1051,10 @@ span.breadcrumb_text_1 {
 
 #link_bar, #link_bar_search, #link_bar_search_bottom {
 	height: auto;
-	/*background-image: url(/ui/cdm/default/collection/default/images/univ_pg_control_bg.png);-->*/
+	background-image: none !important;
+	border-top: 1px solid #E9E9E9;
 	border-bottom: 1px solid #E9E9E9;
-	padding: 0 0 10px 0;
+	padding: 2px 0 10px 0;
 	margin: -10px 0 0 0;
 }
 
@@ -1056,12 +1068,10 @@ span.breadcrumb_text_1 {
 }
 
 #link_bar_search_bottom {
-	background-image: url(/ui/cdm/default/collection/default/images/univ_pg_control_bg_flip.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-	border: #DCDCDC 1px solid;
-	border-width: 0 0 1px 0;
+	background-image: none;
 	margin-top: 30px;
+	padding-top: 13px;
+	padding-bottom: 0;
 }
 
 #link_bar_content {
@@ -1150,7 +1160,7 @@ span.breadcrumb_text_1 {
 
 #title_desc_bar_content {
 	padding-top: 3px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 16px;
 }
@@ -1161,7 +1171,7 @@ span.breadcrumb_text_1 {
 /* -----------------------  Content Styles  ------------------------------ */
 
 #content_footer {
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 	background-color: #6C9;
 	height: 0px;
 	padding-left: 10px;
@@ -1169,7 +1179,7 @@ span.breadcrumb_text_1 {
 }
 
 #content_main {
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 	height: auto;
 	overflow: visible;
 }
@@ -1228,7 +1238,7 @@ button {
 }
 
 .menu_button_text, .pagination_button_text, .nav_button_text, .search_button_text,.primary_button_text, .secondary_button_text, .dialog_button_text, .tertiary_button_text, .quaternary_button_text {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	display: block;
@@ -1256,7 +1266,7 @@ table.button_table { cursor: pointer; }
 
 .pagination_button {
 	color: #333;
-	background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
 background-repeat: repeat-x;
 background-attachment: scroll;
 background-position: 50% 50%;
@@ -1274,7 +1284,7 @@ background-position: 50% 50%;
 }
 
 .pagination_button_text {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	font-size: 9px;
 	padding: 0 3px;
@@ -1293,7 +1303,7 @@ background-position: 50% 50%;
 .pagination_button_icon {
 	height: 14px;
 	width: 14px;
-	background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	margin: -4px 0 0 0;
 }
 
@@ -1304,7 +1314,7 @@ background-position: 50% 50%;
 	color: #1D5987;
 }
 
-.pagination_button_icon_hover { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.pagination_button_icon_hover { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 /* ------------------------------- Navigation Buttons -----------------------------------------------------*/
 
@@ -1346,7 +1356,7 @@ background-position: 50% 50%;
 	-moz-border-radius: 4px 4px 4px 4px;
 }
 
-.secondary_button_icon { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.secondary_button_icon { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 .secondary_button_hover {
 	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_dadada_1x400.png);
@@ -1381,7 +1391,7 @@ background-position: 50% 50%;
 	-moz-border-radius: 4px;
 }
 
-.menu_button_icon { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.menu_button_icon { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 .menu_button_hover {
 	/*background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_d0e5f5_1x400.png);
@@ -1393,7 +1403,7 @@ background-position: 50% 50%;
 	color: #333;
 }
 
-.menu_button_icon_hover { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png); }
+.menu_button_icon_hover { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 /* ------------------------------- Dialog Buttons -----------------------------------------------------*/
 
@@ -1437,7 +1447,7 @@ background-position: 50% 50%;
 .tertiary_button_icon {
 	height: 12px;
 	width: 12px;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_6da8d5_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 }
 
 .tertiary_button {
@@ -1462,7 +1472,7 @@ background-position: 50% 50%;
 	color: #1D5987;
 }
 
-.tertiary_button_icon_hover { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png); }
+.tertiary_button_icon_hover { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 #fb_show_fulltext_button {
 	margin-left: 5px;
@@ -1488,7 +1498,7 @@ background-position: 50% 50%;
 .quaternary_icon_arrow_e { background-position: -22px 0px; }
 #fullbrowser_nav_top_right table tr td { padding: 0; }
 
-/*------Overriding button styles with Twitter bootstrap styles--->
+/*------Overriding button styles with Twitter bootstrap styles--->*/
 
 input[type="button"] {
   display: inline-block;
@@ -1496,6 +1506,8 @@ input[type="button"] {
   /* IE7 inline-block hack */
 
   *zoom: 1;
+  height: auto;
+  width: auto;
   padding: 4px 10px 4px;
   margin-bottom: 0;
   font-size: 13px;
@@ -1526,6 +1538,7 @@ input[type="button"] {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   *margin-left: .3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 input[type="button"]:hover,
@@ -1595,22 +1608,22 @@ input[type="button"][disabled] {
 .icon_12 { margin: 3px 2px; }
 .icon_11 { margin: 2px 2px; }
 .icon_10 { margin: 2px 2px;}
-.icon_nav_top_left { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
-.icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
+.icon_nav_top_left { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 
 
 .icon_link_bar {
-	background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	margin: -2px 3px 0 0;
 }
 
-.icon_link_bar_hover { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
-.icon_drop_down { background-image: url(http://www.desplainesmemory.org//ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
-.icon_fav_link_off { background-image: url(http://www.desplainesmemory.org//ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
-.icon_fav_link_on { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
+.icon_link_bar_hover { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
+.icon_drop_down { background-image: url(//ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.icon_fav_link_off { background-image: url(//ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.icon_fav_link_on { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 
 .icon_adv_search {
-	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_454545_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	margin: -2px 0 0 0;
 }
 
@@ -1776,7 +1789,7 @@ input[type="button"][disabled] {
 .ui-icon-circle-minus { background-position: -19px -195px; }
 
 .ui-icon-circle-close {
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	background-position: -33px -193px;
 	display: inline-block;
 	height: 16px;
@@ -1825,7 +1838,7 @@ input[type="button"][disabled] {
 
 .cdm_accordion, .cdm_togglebox {
 	color: #C3C3C3;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	margin: 0;
 	border: 0 none;
@@ -1837,7 +1850,7 @@ input[type="button"][disabled] {
 }
 
 .accordion_header {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	margin: 1px 0 0 0;
@@ -1911,7 +1924,7 @@ input[type="button"][disabled] {
 	margin: 0;
 	outline: 0 none;
 	text-decoration: none;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,Arial,Helvetica,sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,;
 }
 
 .accordionHeaderFocusBorder { border: 1px solid #666666; }
@@ -1928,14 +1941,14 @@ input[type="button"][disabled] {
 	width: 362px;
 	z-index: 1001;
 	-moz-border-radius: 5px 5px 5px 5px;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_inset-hard_100_fcfdfd_1x100.png);
-	background-repeat: repeat-x;
+	background-image: none;
+	/*background-repeat: repeat-x;
 	background-attachment: scroll;
-	background-position: 50% bottom;
-	background-color: #FCFDFD;
-	border: 1px solid #A6C9E2;
+	background-position: 50% bottom;*/
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
 	color: #222222;
-	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,;
 	font-size: 1.1em;
 	overflow: hidden;
 	padding: 0.2em;
@@ -1947,12 +1960,9 @@ input[type="button"][disabled] {
 	padding: 15px 15px 15px 1px;
 	position: relative;
 	-moz-border-radius: 5px 5px 5px 5px;
-	/*background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_gloss-wave_55_5c9ccc_500x100.png);
-	background-repeat: repeat-x;
-	background-attachment: scroll;
-	background-position: 50% 50%;*/
-	background-color: #C0EC67;
-	border: 1px solid #63AF00;
+	background-image: none;
+	background-color: #333;
+	border: 1px solid #333;
 	color: #FFFFFF;
 	font-weight: bold;
 	display: block;
@@ -1993,7 +2003,7 @@ input[type="button"][disabled] {
 
 .dialog_title_bar_close_link_inner {
 	display: block;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_d8e7f3_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	background-position: -96px -128px;
 	height: 16px;
 	width: 16px;
@@ -2005,7 +2015,7 @@ input[type="button"][disabled] {
 .dialog_title_bar_close_link_inner_2 {
 	display: block;
 	margin: 1px;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_6da8d5_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	background-position: -96px -128px;
 	height: 16px;
 	width: 16px;
@@ -2015,7 +2025,7 @@ input[type="button"][disabled] {
 }
 
 .dialog_title_bar_close_link_itemsearch_inner2 { margin-left: 0; }
-.dialog_title_bar_close_link_inner_hover { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png); }
+.dialog_title_bar_close_link_inner_hover { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 .dialog_content {
 	display: block;
@@ -2034,7 +2044,7 @@ input[type="button"][disabled] {
 .dialog_content_resizable_handle {
 	-moz-user-select: none;
 	z-index: 1001;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_469bdd_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	bottom: 3px;
 	height: 14px;
 	right: 3px;
@@ -2350,7 +2360,7 @@ div.co-monograph-item-wrapper { cursor: pointer; }
 }
 
 .co-content-search {
-	font-family: verdana, arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #cd0a0a;
 	font-size: 10px;
 	font-weight: normal;
@@ -2426,7 +2436,7 @@ table.co-pagination td.co-pagination-page {
 }
 
 table.co-pagination td .ui-icon-triangle-1-e, table.co-pagination td .ui-icon-triangle-1-w {
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	margin: 0 5px;
 }
 
@@ -2477,7 +2487,7 @@ div { }
 }
 
 #lp_img_flow_caption {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #0066CC;
 	width: 400px !important;
@@ -2793,14 +2803,14 @@ div.results_tn_icon_favs_link {
 
 #details_accordion {
 	margin: 0 0 0 0;
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 	font-size: 11px;
 	color: #C3C3C3;
 }
 
 #details_accordion>h3.accordion_header_active {
 	font-size: 12px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 }
 
@@ -2875,7 +2885,7 @@ a.cite_dialog_text_2 {
 #cd_accordion { max-height: 500px; }
 
 #cite_dialog_accordion {
-	font-family: inherit, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 	font-size: 11px;
 	color: #C3C3C3;
 	margin: 5px 18px 0 20px;
@@ -2896,7 +2906,7 @@ a.cite_dialog_text_2 {
 /* -----------------------  Reference URL Dialog Styles  ------------------------------ */
 
 #reference_url_dialog {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
@@ -2917,7 +2927,7 @@ a.cite_dialog_text_2 {
 /* -----------------------  Login Dialog Styles  ------------------------------ */
 
 #login_dialog {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
@@ -2938,7 +2948,7 @@ a.cite_dialog_text_2 {
 /* -----------------------  Favorites Dialog Styles  ------------------------------ */
 
 #favorites_dialog {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
@@ -2959,7 +2969,7 @@ a.cite_dialog_text_2 {
 
 #under_construction_dialog {
 	width: 520px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	padding: 15px 0 10px 0;
 	display: none;
@@ -2990,7 +3000,7 @@ a.cite_dialog_text_2 {
 #max_collections_dialog, #advanced_max_collections_dialog { display: none; }
 
 #max_collections_content, #advanced_max_collections_content {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	margin: 0 0 0 10px;
 }
@@ -3059,7 +3069,7 @@ a.cite_dialog_text_2 {
 
 #display_options_content {
 	height: 165px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 10px;
 	margin: 0 0 0 10px;
 }
@@ -3181,7 +3191,7 @@ a.cite_dialog_text_2 {
 #cdmResultsGridView .cdmResultsGridItemTextHeader, #cdmResultsGridView .cdmResultsGridItemImgHeader {
 	color: #525252;
 	font-weight: bold;
-	font-family: inherit;;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
 	font-size: 13px;
 }
 
@@ -3410,8 +3420,8 @@ div.jcarousel-control img {
 	border-radius: 5px;
 }
 
-#ui-datepicker-div .ui-state-hover .ui-icon { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png); }
-#ui-datepicker-div .ui-icon-circle-triangle-e, #ui-datepicker-div .ui-icon-circle-triangle-w { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_d8e7f3_256x240.png); }
+#ui-datepicker-div .ui-state-hover .ui-icon { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+#ui-datepicker-div .ui-icon-circle-triangle-e, #ui-datepicker-div .ui-icon-circle-triangle-w { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 #ui-datepicker-div .ui-icon-circle-triangle-e { background-position: -48px -192px; }
 #ui-datepicker-div .ui-icon-circle-triangle-w { background-position: -80px -192px; }
 
@@ -3591,7 +3601,7 @@ div.jcarousel-control img {
 
 .ui-state-error a, .ui-widget-content .ui-state-error a { color: #cd0a0a; }
 .ui-state-error-text, .ui-widget-content .ui-state-error-text { color: #cd0a0a; }
-.ui-state-error .ui-icon, .ui-state-error-text .ui-icon { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_cd0a0a_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 #adv_search_error .ui-icon-alert, span.ui-icon-alert-cdmerror {
 	background-position: -2px -146px;
@@ -3725,7 +3735,7 @@ div.quickview_image_col img.quickview_thumb {
 
 #print_button_options_dd_content, #download_button_options_dd_content {
 	width: 100%;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -3745,7 +3755,7 @@ div.quickview_image_col img.quickview_thumb {
 
 #report_abuse_content {
 	height: 200px;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 10px;
 	margin: 0 0 0 10px;
 }
@@ -3831,7 +3841,7 @@ a.cdm_disabled_link {
 }
 
 #exportaspage_dialog {
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
