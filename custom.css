@@ -383,13 +383,16 @@ html body span.clear {
 
 #nav_top a{font-size: 13px;}
 
-#nav_top b{
-  font-weight: normal !important;
-}
 
 #nav_top a:hover{
 	color: #63af00 !important;
 	text-decoration: none !important;
+}
+
+#nav_top .cdmHelpLink{float: left;}
+
+#nav_top b{
+  font-weight: normal !important;
 }
 
 #nav_footer {
@@ -1253,6 +1256,10 @@ table.button_table { cursor: pointer; }
 
 .pagination_button {
 	color: #333;
+	background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
+background-repeat: repeat-x;
+background-attachment: scroll;
+background-position: 50% 50%;
 	background-color: #F9F9F9;
 	border: 1px solid;
 	border-color: #E9E9E9;
@@ -1286,7 +1293,7 @@ table.button_table { cursor: pointer; }
 .pagination_button_icon {
 	height: 14px;
 	width: 14px;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_6da8d5_256x240.png);
+	background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	margin: -4px 0 0 0;
 }
 
@@ -1297,7 +1304,7 @@ table.button_table { cursor: pointer; }
 	color: #1D5987;
 }
 
-.pagination_button_icon_hover { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png); }
+.pagination_button_icon_hover { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 /* ------------------------------- Navigation Buttons -----------------------------------------------------*/
 
@@ -1339,7 +1346,7 @@ table.button_table { cursor: pointer; }
 	-moz-border-radius: 4px 4px 4px 4px;
 }
 
-.secondary_button_icon { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_6da8d5_256x240.png); }
+.secondary_button_icon { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 .secondary_button_hover {
 	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_dadada_1x400.png);
@@ -1374,7 +1381,7 @@ table.button_table { cursor: pointer; }
 	-moz-border-radius: 4px;
 }
 
-.menu_button_icon { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_6da8d5_256x240.png); }
+.menu_button_icon { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 .menu_button_hover {
 	/*background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_d0e5f5_1x400.png);
@@ -1587,20 +1594,19 @@ input[type="button"][disabled] {
 .icon_14 { margin: 4px 2px; }
 .icon_12 { margin: 3px 2px; }
 .icon_11 { margin: 2px 2px; }
-.icon_10 { margin: 0 2px;}
+.icon_10 { margin: 2px 2px;}
 .icon_nav_top_left { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 .icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 
-.icon_nav_top_right{vertical-align: middle; height: 16px;}
 
 .icon_link_bar {
-	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
+	background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	margin: -2px 3px 0 0;
 }
 
 .icon_link_bar_hover { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
-.icon_drop_down { background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_217bc0_256x240.png); }
-.icon_fav_link_off { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.icon_drop_down { background-image: url(http://www.desplainesmemory.org//ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
+.icon_fav_link_off { background-image: url(http://www.desplainesmemory.org//ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 .icon_fav_link_on { background-image: url(http://www.desplainesmemory.org/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 
 .icon_adv_search {
@@ -3589,7 +3595,7 @@ div.jcarousel-control img {
 
 #adv_search_error .ui-icon-alert, span.ui-icon-alert-cdmerror {
 	background-position: -2px -146px;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-icons_cd0a0a_256x240.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 }
 
 #adv_search_error.ui-corner-all {
