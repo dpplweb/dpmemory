@@ -29,7 +29,7 @@
 		$thumburl = '/cdm/ref/collection/p15770coll1/id/{id}';
 		
 		$projects = array(
-			'Brown\'s Department Store' => array('description' => 'Description', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'thumb_id' => '243'),
+			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'thumb_id' => '243'),
 			'Camp Pine' => array('description' => 'Hans Reinhold and Rudolph Velte were among the German P.O.W.s held at Camp Pine in Des Plaines, Illinois during World War II. These few letters and photographs offer insight into their experiences during their time as Camp Pine inmates through their return to Europe after the war.', 'param' => 'camp%20pine', 'thumb' => 'camp-pine-thumb', 'thumb_id' => '211'),
 			'Douglas Aircraft' => array('description' => 'World War II era photographs and documents related to the Douglas Aircraft (McDonnell Douglas Corporation) factory in Des Plaines, Illinois. The factory site later became part of O’Hare International Airport.', 'param' => 'douglas%20aircraft', 'thumb' => 'douglas-thumb', 'thumb_id' => '223'),
 			'Maine Township Schools' => array('description' => 'Photographs and postcards of schools built in Maine Township, Illinois from the mid-1870s through the mid-1930s. Includes public and parochial schools.', 'param' => 'maine%20township%20schools', 'thumb' => 'schools-thumb', 'thumb_id' => '258'),
@@ -40,16 +40,18 @@
 		$c = 0;
 		
 		foreach ($projects as $key => $project){
-			$r = $i % 3;
 			
-			if ($r == 0){
+			if ($i % 3 == 0){
 				echo '<hr /><div class="row">';
 				$c = 0;
 			}
 			
+			$projurl = str_replace('{param}', $project['param'], $baseurl);
+			$itemurl = str_replace('{id}', $project['thumb_id'], $thumburl);
+			
 			echo '	<div class="span4">';
-			echo '		<ul class="thumbnails"><li><a href="' .str_replace('{id}', $project['thumb_id'], $thumburl) . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_p15770coll1/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
-			echo '		<h3><a href="' . str_replace('{param}', $project['param'], $baseurl). '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . str_replace('{param}', $project['param'], $baseurl). '" title="' . $key . '" class="btn">View Project</a></p>';
+			echo '		<ul class="thumbnails"><li><a href="' . $itemurl . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_p15770coll1/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
+			echo '		<h3><a href="' . $projurl . '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . $projurl . '" title="' . $key . '" class="btn">View Project</a></p>';
 			echo '	</div>';
 			
 			if ($c == 2){
