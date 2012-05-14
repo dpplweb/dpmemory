@@ -371,6 +371,7 @@ html body span.clear {
 /* -----------------------  Header Styles  ------------------------------ */
 
 #headerWrapper {
+	height: 90px;
 	background-color: #ffffff;
 	cursor: pointer;
 	overflow: hidden;
