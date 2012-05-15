@@ -29,12 +29,12 @@
 		$thumburl = '/cdm/ref/collection/p15770coll1/id/{id}';
 		
 		$projects = array(
-			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'thumb_id' => '243'),
-			'Camp Pine' => array('description' => 'Hans Reinhold and Rudolph Velte were among the German P.O.W.s held at Camp Pine in Des Plaines, Illinois during World War II. These few letters and photographs offer insight into their experiences during their time as Camp Pine inmates through their return to Europe after the war.', 'param' => 'camp%20pine', 'thumb' => 'camp-pine-thumb', 'thumb_id' => '211'),
-			'Douglas Aircraft' => array('description' => 'World War II era photographs and documents related to the Douglas Aircraft (McDonnell Douglas Corporation) factory in Des Plaines, Illinois. The factory site later became part of O’Hare International Airport.', 'param' => 'douglas%20aircraft', 'thumb' => 'douglas-thumb', 'thumb_id' => '223'),
-			'Maine Township Schools' => array('description' => 'Photographs and postcards of schools built in Maine Township, Illinois from the mid-1870s through the mid-1930s. Includes public and parochial schools.', 'param' => 'maine%20township%20schools', 'thumb' => 'schools-thumb', 'thumb_id' => '258'),
-			'On the Streets of Des Plaines, 1915' => array('description' => 'Candid photographs taken on the streets of downtown Des Plaines, Illinois, circa 1915. Locations include the Congregational Church, Village Hall and the Chicago and Northwestern Railway station.', 'param' => 'on%20the%20streets%20of%20des%20plaines%2c%201915', 'thumb' => 'streets-thumb', 'thumb_id' => '302'),
-			'Plew Homes' => array('description' => 'Photographs from the archives of the W. L. Plew Company, a small real estate and construction company in Des Plaines, Illinois. Most of the homes pictured were built in the neighborhood known as Des Plaines Gardens during the 1920s and 1930s.', 'param' => 'plew%20homes', 'thumb' => 'plew-thumb', 'thumb_id' => '68'),
+			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'item_id' => '243'),
+			'Camp Pine' => array('description' => 'Hans Reinhold and Rudolph Velte were among the German P.O.W.s held at Camp Pine in Des Plaines, Illinois during World War II. These few letters and photographs offer insight into their experiences during their time as Camp Pine inmates through their return to Europe after the war.', 'param' => 'camp%20pine', 'thumb' => 'camp-pine-thumb', 'item_id' => '211'),
+			'Douglas Aircraft' => array('description' => 'World War II era photographs and documents related to the Douglas Aircraft (McDonnell Douglas Corporation) factory in Des Plaines, Illinois. The factory site later became part of O’Hare International Airport.', 'param' => 'douglas%20aircraft', 'thumb' => 'douglas-thumb', 'item_id' => '223'),
+			'Maine Township Schools' => array('description' => 'Photographs and postcards of schools built in Maine Township, Illinois from the mid-1870s through the mid-1930s. Includes public and parochial schools.', 'param' => 'maine%20township%20schools', 'thumb' => 'schools-thumb', 'item_id' => '258'),
+			'On the Streets of Des Plaines, 1915' => array('description' => 'Candid photographs taken on the streets of downtown Des Plaines, Illinois, circa 1915. Locations include the Congregational Church, Village Hall and the Chicago and Northwestern Railway station.', 'param' => 'on%20the%20streets%20of%20des%20plaines%2c%201915', 'thumb' => 'streets-thumb', 'item_id' => '302'),
+			'Plew Homes' => array('description' => 'Photographs from the archives of the W. L. Plew Company, a small real estate and construction company in Des Plaines, Illinois. Most of the homes pictured were built in the neighborhood known as Des Plaines Gardens during the 1920s and 1930s.', 'param' => 'plew%20homes', 'thumb' => 'plew-thumb', 'item_id' => '68'),
 			);
 		$i = 0;
 		$c = 0;
@@ -47,7 +47,7 @@
 			}
 			
 			$projurl = str_replace('{param}', $project['param'], $baseurl);
-			$itemurl = str_replace('{id}', $project['thumb_id'], $thumburl);
+			$itemurl = str_replace('{id}', $project['item_id'], $thumburl);
 			
 			echo '	<div class="span4">';
 			echo '		<ul class="thumbnails"><li><a href="' . $itemurl . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_p15770coll1/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
