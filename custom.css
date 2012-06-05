@@ -1285,9 +1285,9 @@ table.button_table { cursor: pointer; }
 .pagination_button {
 	color: #333;
 	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
-background-repeat: repeat-x;
-background-attachment: scroll;
-background-position: 50% 50%;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: 50% 50%;
 	background-color: #F9F9F9;
 	border: 1px solid;
 	border-color: #E9E9E9;
@@ -1328,7 +1328,7 @@ background-position: 50% 50%;
 .pagination_button_hover {
 	background-color: #F9F9F9;
 	border: 1px solid;
-	border-color: ##63AF00;
+	border-color: #63AF00;
 	color: #333;
 }
 
@@ -1363,8 +1363,8 @@ background-position: 50% 50%;
 /* ------------------------------- Secondary Action Buttons -----------------------------------------------------*/
 
 .secondary_button {
-	color: #2E6E9E;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_e6e6e6_1x400.png);
+	color: #333;
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
@@ -1383,7 +1383,6 @@ background-position: 50% 50%;
 	background-position: 50% 50%;
 	background-color: #DADADA;
 	border: 1px solid #999999;
-	color: #212121;
 }
 
 .secondary_button_icon_hover { }
@@ -1400,7 +1399,7 @@ background-position: 50% 50%;
 
 .menu_button {
 	color: #333;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_85_e6e6e6_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
@@ -1412,10 +1411,10 @@ background-position: 50% 50%;
 .menu_button_icon { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 .menu_button_hover {
-	/*background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_d0e5f5_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_dadada_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
-	background-position: 50% 50%;*/
+	background-position: 50% 50%;
 	background-color: #F9F9F9;
 	border: 1px solid #333;
 	color: #333;
@@ -1427,7 +1426,7 @@ background-position: 50% 50%;
 
 .dialog_button {
 	color: #2E6E9E;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_85_dfeffc_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_85_e6e6e6_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
@@ -1443,7 +1442,7 @@ background-position: 50% 50%;
 }
 
 .dialog_button_hover {
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_d0e5f5_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg-glass-75-dadada_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
@@ -1470,7 +1469,7 @@ background-position: 50% 50%;
 
 .tertiary_button {
 	color: #2E6E9E;
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_85_dfeffc_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smotthness-ui-bg_glass_85_e6e6e6_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
@@ -1481,7 +1480,7 @@ background-position: 50% 50%;
 .tertiary_button_text { font-size: 10px; }
 
 .tertiary_button_hover {
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_d0e5f5_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg-glass-75-dadada_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
@@ -1785,6 +1784,7 @@ input[type="button"][disabled] {
 .ui-icon-radio-on { background-position: -115px -147px; }
 .ui-icon-pin-w { background-position: -131px -147px; }
 .ui-icon-pin-s { background-position: -147px -147px; }
+#map_button .ui-icon-pin-s{background-position: -145px -145px;}/*align pin properly for menu button/*/
 .ui-icon-play { background-position: -3px -163px; }
 .ui-icon-pause { background-position: -19px -163px; }
 .ui-icon-seek-next { background-position: -35px -163px; }
@@ -2026,7 +2026,7 @@ input[type="button"][disabled] {
 .dialog_title_bar_close_link_itemsearch { width: 16px; }
 
 .dialog_title_bar_close_link_hover {
-	background-image: url(/ui/cdm/default/collection/default/css/images/redmond-ui-bg_glass_75_d0e5f5_1x400.png);
+	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg-glass-75-dadada_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
