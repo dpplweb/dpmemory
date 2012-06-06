@@ -14,7 +14,7 @@ $(function(){
 			url = url.replace('{location}', loc);
 			url = url.replace('{key}', mapkey);
 			
-			window.open(url, loc, 'location=0, status=0, scrollbars=0, width=500, height=500');
+			window.open(url, 'Map', 'location=0, status=0, scrollbars=0, width=500, height=500');
 			
 			return false;
 		});
