@@ -23,10 +23,11 @@
 			</div>
 		</div>
 	</div><!--first row-->
-			<?php
-	
-		$baseurl = '/cdm/search/collection/p15770coll1/searchterm/{param}/field/projec/mode/all/conn/and/order/title/ad/asc';
-		$thumburl = '/cdm/ref/collection/p15770coll1/id/{id}';
+	<?php
+		$collection_ID = 'p15770coll1';
+		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}/field/projec/mode/all/conn/and/order/title/ad/asc';
+		$thumb_url = '/cdm/ref/collection/' . $collection_ID . '/id/{id}';
+		$has_images = True;
 		
 		$projects = array(
 			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'item_id' => '243'),
@@ -46,12 +47,14 @@
 				$c = 0;
 			}
 			
-			$projurl = str_replace('{param}', $project['param'], $baseurl);
-			$itemurl = str_replace('{id}', $project['item_id'], $thumburl);
+			$proj_url = str_replace('{param}', $project['param'], $base_url);
+			$item_url = str_replace('{id}', $project['item_id'], $thumb_url);
 			
 			echo '	<div class="span4">';
-			echo '		<ul class="thumbnails"><li><a href="' . $itemurl . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_p15770coll1/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
-			echo '		<h3><a href="' . $projurl . '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . $projurl . '" title="' . $key . '" class="btn">View Project</a></p>';
+			if ($has_images == True){
+				echo '		<ul class="thumbnails"><li><a href="' . $item_url . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_' . $collection_ID . '/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
+			}
+			echo '		<h3><a href="' . $proj_url . '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . $proj_url . '" title="' . $key . '" class="btn">View Items</a></p>';
 			echo '	</div>';
 			
 			if ($c == 2){

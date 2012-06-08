@@ -1,9 +1,9 @@
 $(function(){
 	if($('#metadata_locati').length != 0){
-		var mapButton = '<td><div id="map_button" class="secondary_button" button_type="secondary" style="padding: 0;"><table class="button_table"><tbody><tr><td><span class="secondary_button_icon ui-icon-pin-s"></span></td><td><span class="secondary_button_text">View Map</span></td><td></td></tr></tbody></table></div>';
+		var mapButton = '<td><div id="map_button" class="menu_button" button_type="secondary" style="padding: 0;"><table class="button_table"><tbody><tr><td><span class="menu_button_icon ui-icon-pin-s"></span></td><td><span class="menu_button_text">View Map</span></td><td></td></tr></tbody></table></div>';
 		$('div#download_print > table > tbody > tr:first-child').prepend(mapButton);
 		
-		$('#map_button').hover(function(){$(this).toggleClass('secondary_button_hover')});
+		$('#map_button').hover(function(){$(this).toggleClass('menu_button_hover')});
 		
 		$('#map_button').click(function(){
 			var loc = $.trim($('#metadata_locati').text());
