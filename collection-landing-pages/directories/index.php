@@ -8,9 +8,9 @@
 <div class="container">
 	<div class="row">
 		<div class="span8">
-			<h1>Local Newspapers</h1>
-			<p>This collection brings together issues of several local newspapers dating from 1939 to the present. The oldest newspapers were badly damaged by water and mold and are preserved here for historical research.</p>
-			<p style="margin-top: 2em; font-style: oblique;">We recommend viewing the Local Newspaper collection with the <a href="http://www.mozilla.org/en-US/firefox/new" rel="nofollow">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" rel="nofollow">Google Chrome</a> browser.</p>
+			<h1>Telephone Directories</h1>
+			<p>This collection brings together telephone directories from Des Plaines and the surrounding communities. The directories are a great tool for doing genealogical and historical research.</p>
+			<p style="margin-top: 2em; font-style: oblique;">We recommend viewing the Telephone Directories collection with the <a href="http://www.mozilla.org/en-US/firefox/new" rel="nofollow">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" rel="nofollow">Google Chrome</a> browser.</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
@@ -24,15 +24,16 @@
 		</div>
 	</div><!--first row-->
 	<?php
-		$collection_ID = 'p15770coll3';
+		$collection_ID = 'p15770coll4';
 		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}/field/projec/mode/all/conn/and/order/title/ad/asc';
 		$thumb_url = '/cdm/ref/collection/' . $collection_ID . '/id/{id}';
 		$has_images = True;
 		
 		$projects = array(
-			'Des Plaines Suburban Times' => array('description' => 'You will find issues for the Des Plaines Suburban Times for following year(s): 1939-1941, 1944-1945, 1947-1952, 1954, 1957-1970', 'param' => 'des%20plaines%20suburban%20times', 'thumb' => 'dp-suburban-times-thumb', 'item_id' => '68'),
-			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2010.', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
-			'Edison Norwood Review' => array('description' => 'You will find issues for the Edison Norwood Review for the following year(s): 1952 (October, November and December only)', 'param' => 'edison%20norwood%20review', 'thumb' => 'en-review-thumb', 'item_id' => '3229'),
+			'Des Plaines and Rural City Directory' => array('description' => 'Residential and commercial telephone listings for Des Plaines, Illinois and surrounding area.', 'param' => 'des%20plaines%20and%20rural%20city%20directory', 'thumb' => 'dp-rural-city-directory-thumb', 'item_id' => '132'),
+			'Telephone Directory, Des Plaines, Illinois' => array('description' => 'Residential and commercial telephone directory of Des Plaines and Park Ridge, Illinois.', 'param' => 'telephone%20directory%2C%20des%20plaines%2C%20illinois', 'thumb' => 'telephone-directory-dp-thumb', 'item_id' => '229'),
+			'Telephone Directory, Norwood - Edison Park, Park Ridge and Des Plaines' => array('description' => 'Residential and commercial telephone directory of Des Plaines, Edison Park, Norwood Park and Park Ridge, Illinois.', 'param' => 'telephone%20directory%2C%20norwood%20-%20edison%20park%2C%20park%20ridge%20and%20des%20plaines', 'thumb' => 'telephone-directory-norwood-dp-thumb', 'item_id' => '521'),
+			'Telephone Directory, Des Plaines - Park Ridge' => array('description' => 'Residential and commercial telephone directory of Des Plaines and Park Ridge, Illinois.', 'param' => 'telephone%20directory%2C%20des%20plaines%20-%20park%20ridge', 'thumb' => 'telephone-directory-dp-park-ridge-thumb', 'item_id' => '1432'),
 			);
 		$i = 0;
 		$c = 0;

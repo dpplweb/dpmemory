@@ -8,9 +8,8 @@
 <div class="container">
 	<div class="row">
 		<div class="span8">
-			<h1>Local Newspapers</h1>
-			<p>This collection brings together issues of several local newspapers dating from 1939 to the present. The oldest newspapers were badly damaged by water and mold and are preserved here for historical research.</p>
-			<p style="margin-top: 2em; font-style: oblique;">We recommend viewing the Local Newspaper collection with the <a href="http://www.mozilla.org/en-US/firefox/new" rel="nofollow">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" rel="nofollow">Google Chrome</a> browser.</p>
+			<h1>COLLECTION TITLE</h1>
+			<p>DESCRIPTION</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
@@ -24,15 +23,13 @@
 		</div>
 	</div><!--first row-->
 	<?php
-		$collection_ID = 'p15770coll3';
+		$collection_ID = '';
 		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}/field/projec/mode/all/conn/and/order/title/ad/asc';
 		$thumb_url = '/cdm/ref/collection/' . $collection_ID . '/id/{id}';
-		$has_images = True;
+		$has_images = False; //change to True to show thumbnails
 		
 		$projects = array(
-			'Des Plaines Suburban Times' => array('description' => 'You will find issues for the Des Plaines Suburban Times for following year(s): 1939-1941, 1944-1945, 1947-1952, 1954, 1957-1970', 'param' => 'des%20plaines%20suburban%20times', 'thumb' => 'dp-suburban-times-thumb', 'item_id' => '68'),
-			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2010.', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
-			'Edison Norwood Review' => array('description' => 'You will find issues for the Edison Norwood Review for the following year(s): 1952 (October, November and December only)', 'param' => 'edison%20norwood%20review', 'thumb' => 'en-review-thumb', 'item_id' => '3229'),
+			'PROJECT NAME' => array('description' => 'DESCRIPTION', 'param' => 'PARAMATER [URL ENCODED PLEASE]', 'thumb' => 'THUMBNAIL-NO-FILE-EXTENSION', 'item_id' => 'ITEM_ID'),
 			);
 		$i = 0;
 		$c = 0;
@@ -48,11 +45,9 @@
 			$item_url = str_replace('{id}', $project['item_id'], $thumb_url);
 			
 			echo '	<div class="span4">';
-			
 			if ($has_images == True){
 				echo '		<ul class="thumbnails"><li><a href="' . $item_url . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_' . $collection_ID . '/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
 			}
-			
 			echo '		<h3><a href="' . $proj_url . '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . $proj_url . '" title="' . $key . '" class="btn">View Items</a></p>';
 			echo '	</div>';
 			
