@@ -36,6 +36,7 @@
 			'Maine Township Schools' => array('description' => 'Photographs and postcards of schools built in Maine Township, Illinois from the mid-1870s through the mid-1930s. Includes public and parochial schools.', 'param' => 'maine%20township%20schools', 'thumb' => 'schools-thumb', 'item_id' => '258'),
 			'On the Streets of Des Plaines, 1915' => array('description' => 'Candid photographs taken on the streets of downtown Des Plaines, Illinois, circa 1915. Locations include the Congregational Church, Village Hall and the Chicago and Northwestern Railway station.', 'param' => 'on%20the%20streets%20of%20des%20plaines%2c%201915', 'thumb' => 'streets-thumb', 'item_id' => '302'),
 			'Plew Homes' => array('description' => 'Photographs from the archives of the W. L. Plew Company, a small real estate and construction company in Des Plaines, Illinois. Most of the homes pictured were built in the neighborhood known as Des Plaines Gardens during the 1920s and 1930s.', 'param' => 'plew%20homes', 'thumb' => 'plew-thumb', 'item_id' => '68'),
+			'Personal Diaries' => array('description' => 'These diaries kept by Charles Bennett and Hester Thomas provide a vivid and intimate look at life in the Des Plaines region during the mid-19th century.', 'param' => 'personal%20diaries', 'thumb' => 'personal-diaries-thumb', 'item_id' => '371'),
 			);
 		$i = 0;
 		$c = 0;
