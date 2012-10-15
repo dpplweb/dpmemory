@@ -88,7 +88,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
 	color: #333;
-	width: 998px;
+	width: 978px;
 	background-color: #ffffff;
 	border-left: 1px solid #ddd; 
 	border-right: 1px solid #ddd;
@@ -382,12 +382,12 @@ html body span.clear {
 /* -----------------------  Nav Top Styles  ------------------------------ */
 
 #nav_top {
-	height: 34px; 
+	height: 32px; 
 	width: 100%;
-	padding-top: 4px;
+	margin-left: -1px;
 	background-color: #333; 
-	border: 0; 
-	border-width: 1px 0 1px 0;
+	border: 1px solid #333 !important;
+	border-width: 1px;
 	overflow: hidden;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -419,7 +419,7 @@ html body span.clear {
 	overflow: hidden;
 }
 
-#nav_top_left, #nav_footer_left { float: left; }
+#nav_top_left, #nav_footer_left { float: left; margin-left: 5px;}
 
 #nav_top_left{
 	height: 34px; 
@@ -432,7 +432,7 @@ html body span.clear {
 
 #nav_top_right {
 	float: right;
-	padding: 6px 30px 0 0;
+	padding: 6px 20px 0 0;
 }
 
 #fullbrowser_nav_top_right {
@@ -477,6 +477,7 @@ html body span.clear {
 	font-weight: normal;
 	color: #999;
 	padding: 5px 15px 0 15px;
+	padding-left: 15px !important;
 	border-right: 0;
 	font-size: 13px;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -771,7 +772,7 @@ a#search_display_dd_link:hover{text-decoration: none;}
 
 #search_content {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 7px 0 0 30px;
+	margin: 7px 0 0 20px;
 	clear: both;
 }
 
@@ -1038,8 +1039,8 @@ a.suggested_word_selected {
 /* -----------------------  Top Content Styles  ------------------------------ */
 
 #top_content {
-	margin: 0 30px 0 30px;
-	min-width: 960px;
+	margin: 0 20px;
+	min-width: 940px;
 }
 
 
@@ -1200,6 +1201,11 @@ span.breadcrumb_text_1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 	height: auto;
 	overflow: visible;
+}
+
+#content_main #viewport{
+  width: 938px !important;
+  border: 1px solid #c3c3c3;
 }
 
 #content_main_grip, .viewer_wrapper_slider {
@@ -1613,7 +1619,7 @@ input[type="button"][disabled] {
 /* ------------------------------- Icon only Styles --------------------------------------------------*/
 
 .icon_16, .icon_14, .icon_12, .icon_11, .icon_10 {
-	height: 11px;
+	height: 13px;
 	width: 12px;
 	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
 	vertical-align: bottom;
@@ -1624,7 +1630,7 @@ input[type="button"][disabled] {
 .icon_14 { margin: 4px 2px; }
 .icon_12 { margin: 3px 2px; }
 .icon_11 { margin: 2px 2px; }
-.icon_10 { margin: 2px 2px;}
+.icon_10 { margin: 3px 2px;}
 .icon_nav_top_left { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 .icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 
@@ -2696,24 +2702,27 @@ div { }
 
 #results_tn_wrapper {
 	float: left;
-	width: 100%;
+	margin-top: 26px;
+	width: 940px;
 }
 
 #results_tn_col1 {
-	width: 220px;
+	width: 168px;
 	background-color: #F9F9F9;
-	border: 1px solid #E9E9E9;
-	border-width: 1px 1px 0 0;
-	padding: 15px 10px 0 10px;
-	margin: 2px 0 0 -28px;
+	padding: 15px 10px 15px 10px;
+	margin: 2px 0 0 0;
 	float: left;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	border: 1px solid #EEE;
 }
 
 #results_tn_col2 {
-	padding: 12px 15px 15px 15px;
-	margin-left: 220px;
+	float: left;
+	padding: 0 0 15px 20px;
+	margin-left: 0;
 	overflow: hidden;
-	width: 710px;
+	width: 730px;
 }
 
 #breadcrumb { }
@@ -2829,14 +2838,28 @@ div.results_tn_icon_favs_link {
 }
 
 #results_tn_accordion .accordion_window {
-	background-color: #FFFFFF;
-	padding: 0px 10px;
+	background-color: white;
+	padding: 0;
 }
 
-#results_tn_accordion .accordion_window ul { margin: 5px 0 12px 0; }
+#results_tn_accordion .accordion_window ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#results_tn_accordion .accordion_window ul li {
+	line-height: 100%;
+	margin-bottom: 5px;
+	padding: 5px;
+	border-bottom: 1px solid #EEE;
+}
+
+
 #results_tn_collection_show_more_container, #results_tn_collection_hide_more_container { margin: 0 0 10px 0; }
 #results_tn_collection_show_more_link_container, #results_tn_collection_hide_more_link_container { margin: 5px 0 10px 12px; }
 #results_tn_collection_show_more_link_2, #results_tn_collection_hide_more_link_2 { margin: 0 0 0 3px; }
+
 
 /* -----------------------  Widget Styles  ------------ */
 
@@ -3155,6 +3178,10 @@ a.cite_dialog_text_2 {
 /* results browse all litems view */
 #cdmResultsBrowseAllItemsView { margin-top: -20px; }
 
+#cdmResultsBrowseAllItemsView a:hover{
+  text-decoration: none !important;
+}
+
 #cdmResultsBrowseAllItemsView ul {
 	list-style-type: none;
 	margin: 0;
@@ -3162,34 +3189,55 @@ a.cite_dialog_text_2 {
 }
 
 #cdmResultsBrowseAllItemsView .listItem {
-	/*width: 110px;*/
-	width: 142px;
-	margin: 10px 35px 10px 0;
+	width: 162px;
+	margin: 10px 20px 10px 0;
+	border: 0;
+	overflow: hidden;
+}
+
+#cdmResultsBrowseAllItemsView .listItem:hover {
+	background-color: #EEE;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 #cdmResultsBrowseAllItemsView .listContentTop {
-	width: 142px;
+	width: 100%;
 	height: 130px;
-	padding-top: 10px;
+	padding-top: 0;
 	position: relative;
+	overflow: hidden;
 }
 
 #cdmResultsBrowseAllItemsView .listContentTopBottomAlign {
-	position: absolute;
-	bottom: 0;
+	position: static;
+	/*bottom: 0;*/
+	text-align: center;
 }
 
+
 #cdmResultsBrowseAllItemsView .listContentBottom {
-	width: 142px;
-	height: 70px;
-	padding-bottom: 10px;
+	width: 147px;
+	height: 80px;
+	margin-top: -30px !important;
+	padding: 5px;
+}
+
+.listContentBottom .body_link_11 {
+	font-size: .9em !important;
+	color: #888;
 }
 
 #cdmResultsBrowseAllItemsView img.results_tn_img {
-	border: 1px solid #000000;
+	border: 1px solid #EEE;
+	padding: 4px;
 	vertical-align: bottom;
 	max-height: 142px;
 	max-width: 142px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 #cdmResultsBrowseAllItemsView .resultFavoriteContainer, #cdmResultsGridView .resultFavoriteContainer { cursor: pointer; }
