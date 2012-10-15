@@ -31,7 +31,7 @@
 		
 		$projects = array(
 			'Des Plaines Suburban Times' => array('description' => 'You will find issues for the Des Plaines Suburban Times for following year(s): 1939-1941, 1944-1945, 1947-1952, 1954, 1957-1970', 'param' => 'des%20plaines%20suburban%20times', 'thumb' => 'dp-suburban-times-thumb', 'item_id' => '68'),
-			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2010.', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
+			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2010, 2011', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
 			'Edison Norwood Review' => array('description' => 'You will find issues for the Edison Norwood Review for the following year(s): 1952 (October, November and December only)', 'param' => 'edison%20norwood%20review', 'thumb' => 'en-review-thumb', 'item_id' => '3229'),
 			);
 		$i = 0;
