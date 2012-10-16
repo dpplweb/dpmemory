@@ -1081,7 +1081,7 @@ span.breadcrumb_text_1 {
 
 #link_bar_search {
 	min-width: 645px;
-	margin: -3px 0 0 0;
+	margin: -26px 0 0 0;
 }
 
 #link_bar_search a:hover{text-decoration: none !important;}
@@ -2723,6 +2723,13 @@ div { }
 	margin-left: 0;
 	overflow: hidden;
 	width: 730px;
+	position: relative;
+}
+
+#results_tn_col2 .float_right.body_text_10 {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 #breadcrumb { }
@@ -2853,6 +2860,10 @@ div.results_tn_icon_favs_link {
 	margin-bottom: 5px;
 	padding: 5px;
 	border-bottom: 1px solid #EEE;
+}
+
+#results_tn_accordion .accordion_window ul li:last-child{
+	border-bottom: 0;
 }
 
 
@@ -3176,7 +3187,7 @@ a.cite_dialog_text_2 {
 #display_options_container5 table tr td { vertical-align: top; }
 
 /* results browse all litems view */
-#cdmResultsBrowseAllItemsView { margin-top: -20px; }
+#cdmResultsBrowseAllItemsView { margin-top: -20px; margin-right: -20px;}
 
 #cdmResultsBrowseAllItemsView a:hover{
   text-decoration: none !important;
@@ -3189,8 +3200,9 @@ a.cite_dialog_text_2 {
 }
 
 #cdmResultsBrowseAllItemsView .listItem {
-	width: 162px;
-	margin: 10px 20px 10px 0;
+	width: 163px;
+	margin: 5px 20px 5px 0;
+	padding: 2px;
 	border: 0;
 	overflow: hidden;
 }
@@ -3205,7 +3217,7 @@ a.cite_dialog_text_2 {
 #cdmResultsBrowseAllItemsView .listContentTop {
 	width: 100%;
 	height: 130px;
-	padding-top: 0;
+	padding-top: 4px;
 	position: relative;
 	overflow: hidden;
 }
@@ -3220,7 +3232,7 @@ a.cite_dialog_text_2 {
 #cdmResultsBrowseAllItemsView .listContentBottom {
 	width: 147px;
 	height: 80px;
-	margin-top: -30px !important;
+	margin-top: -10px !important;
 	padding: 5px;
 }
 
