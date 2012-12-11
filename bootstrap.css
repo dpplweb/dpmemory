@@ -2739,6 +2739,7 @@ input[type="submit"].btn.btn-mini {
   *border-left-color: #ffffff;
 }
 .thumbnails {
+  margin-bottom: 0;
   margin-left: -20px;
   list-style: none;
   *zoom: 1;
@@ -3266,3 +3267,6 @@ ul.sm-links li a.sm-rss{background-position: 0px -32px;}
 .thumbnail img{
   width: 100%;
 }
+
+.about-page dt{margin-top: 1em;}
+.about-page dd{margin-left: 0;}

@@ -1,5 +1,6 @@
 #Ignore robots.txt file
 robots.txt
+testpages/
 
 # ignore OS generated files
 .DS_Store*
