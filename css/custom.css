@@ -1216,7 +1216,7 @@ span.breadcrumb_text_1 {
 }
 
 #content_main #viewport{
-  width: 940px !important;
+  width: 100% !important;
   border: 0 !important;
 }
 
@@ -1275,6 +1275,7 @@ div#imageviewer_toolbar ul li input{
 	transition:0;
 	padding: 0 !important;
 	}
+
 /* -----------------------  Menu Bar Styles  ------------------------------ */
 #menubar_left { float: left; }
 #menubar_center { float: left; }
@@ -1328,14 +1329,24 @@ table.button_table { cursor: pointer; }
 /* ------------------------------- Pagination Control Buttons -----------------------------------------------------*/
 
 .pagination_button {
-	color: #333;
+	/*color: #333;
 	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-bg_glass_75_e6e6e6_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: 50% 50%;
-	background-color: #F9F9F9;
+	background-color: #F9F9F9;*
 	border: 1px solid;
-	border-color: #E9E9E9;
+	border-color: #E9E9E9;*/
+	color: #333;
+	background-image: none;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 	cursor: pointer;
 }
 
@@ -1981,12 +1992,9 @@ input[type="button"][disabled] {
 .accordion_header_closed a:link, .accordion_header_closed a:visited, .accordion_header_closed a:hover, .accordion_header_closed a:active { color: #555555; }
 
 .accordion_header_open {
-	-moz-border-radius-topleft: 4px;
-	-moz-border-radius-topright: 4px;
-	-webkit-border-radius-topleft: 4px;
-	-webkit-border-radius-topright: 4px;
-	border-radius-topleft: 4px;
-	border-radius-topright: 4px;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 	/*background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-bg_glass_65_ffffff_1x400.png);
 	background-repeat: repeat-x;
 	background-attachment: scroll;
@@ -1994,6 +2002,7 @@ input[type="button"][disabled] {
 	background-image: none;
 	background-color: #FFFFFF;
 	border: 1px solid #D3D3D3;
+	border-bottom: 0;
 	color: #212121;
 }
 
@@ -2029,15 +2038,10 @@ input[type="button"][disabled] {
 
 .accordion_window {
 	display: block;
-	-moz-border-radius-bottomleft: 4px;
-	-moz-border-radius-bottomright: 4px;
-	-webkit-border-radius-bottomleft: 4px;
-	-webkit-border-radius-bottomright: 4px;
-	border-radius-bottomleft: 4px;
-	border-radius-bottomright: 4px;
 	border: 1px solid #DDDDDD;
 	color: #333333;
 	border-top: 0 none;
+	margin: 0;
 	margin-bottom: 2px;
 	margin-top: -2px;
 	overflow: auto;
@@ -2047,13 +2051,12 @@ input[type="button"][disabled] {
 	font-size: 100%;
 	line-height: 1.3;
 	list-style: none outside none;
-	margin: 0;
 	outline: 0 none;
 	text-decoration: none;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.accordionHeaderFocusBorder { border: 1px solid #666666; }
+/*.accordionHeaderFocusBorder { border: 1px solid #d3d3d3; }*/
 
 /* ------------------------------- Dialog Styles --------------------------------------------------*/
 
@@ -2973,13 +2976,31 @@ div.results_tn_icon_favs_link {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	color: #C3C3C3;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
 }
+
+#details_accordion h3{display: none !important;}
 
 #details_accordion>h3.accordion_header_active {
 	font-size: 13px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 }
+
+#details_accordion .accordion_window{
+    display: block !important;
+    float: left;
+    top: 0;
+    width: 47.1%;
+    margin: 0;
+    margin-right: -1px;
+    padding: 1.35%;
+    border-top: 0;
+    border-right: 1px solid #ddd;
+}
+
+#details_accordion #cdm_co_item_description{display: none !important;}
 
 .details_accordion_text_2 {
 	font-size: 10px;
@@ -3003,6 +3024,12 @@ td.description_col2 {
 	color: #333;
 	padding-bottom: 10px;
 }
+
+/*paned view stuff*/
+
+.ui-layout-pane{padding: 0 !important;}
+
+#leftPaneContent{margin-right: 0 !important;}
 
 
 /* -----------------------  Cite/Export Dialog, Accordion Styles  ----------------------- */
@@ -4007,27 +4034,29 @@ a.cdm_disabled_link {
 }
 
 .ugc_add_box {
-	background-color: #FAFAD2;
-	border: 1px #FFD700 solid;
+	background-color: #eee !important;
+	border: 0 !important;
 	padding: 7px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
-	font-size: 11px;
-	color: #525252;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-size: 13px !important;
+	color: #333 !important;
 }
 
 .ugc_link {
+    display: block;
 	cursor: pointer;
-	color: #0066cc;
+	color: #63af00 !important;
 	text-decoration: none;
 	font-weight: bold;
 }
 
 .beTheFirst {
-	padding: 3px;
+    display: none;
+	/*padding: 3px;
 	background-image: url(/ui/cdm/default/collection/default/images/bg_befirst.gif);
 	background-position: 0px -5px;
 	background-repeat: no-repeat;
-	color: #ffffff;
+	color: #ffffff;*/
 }
 
 .beTheFirstHide {
@@ -4035,6 +4064,15 @@ a.cdm_disabled_link {
 	background-image: none;
 	color: #ffffff;
 }
+
+#comment_add_cancel{margin-top: 1em;}
+
+#comment_results div{
+    text-indent: -1.2em;
+    padding-left: 1.2em;
+}
+
+#comment_results div[id*='cdm_comment']{padding-top: .5em; border-top: 1px dotted #ddd;}
 
 #exportaspage_dialog {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
