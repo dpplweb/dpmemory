@@ -1,6 +1,6 @@
 $(function(){
     
-    if($('#metadata_locati').length != 0){
+    if($('#metadata_locati').length != 0 || $('#metadata_object_locati').length != 0){
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyABEmDoSNEXi5uaPHLUeUU9AcGqhJbD5gw&sensor=false&callback=initialize_map";
@@ -15,9 +15,15 @@ $(function(){
 });
 
 function initialize_map(){
-    var geocoder;
-    var loc = document.getElementById('metadata_locati').innerHTML.trim();
+    var geocoder, loc;
     var latlng = new google.maps.LatLng(42.033889, -87.899722);
+    
+    if (document.getElementById('metadata_object_locati')){
+        loc = document.getElementById('metadata_object_locati').innerHTML.trim();
+    }
+    else{
+        loc = document.getElementById('metadata_locati').innerHTML.trim();
+    }
     
 
     var mapOptions = {
