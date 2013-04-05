@@ -1,5 +1,5 @@
 <?php
-
+/*
 if(!empty($this->uploadstatus)){
   ?>
 <div class="modal-backdrop" id="form-response">
@@ -28,14 +28,14 @@ if(!empty($this->uploadstatus)){
     </div>
   </div>  
   <?php
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<link href="/ui/custom/default/collection/default/css/custom/bootstrap.css" rel="stylesheet">
-	<!--<link href="../bootstrap.css" rel="stylesheet">-->
+	<link href="../bootstrap.css" rel="stylesheet">
 	<style>
 	    .container{margin: 2em auto;}
 	    #breadcrumb_top{display: none;}
@@ -45,9 +45,10 @@ if(!empty($this->uploadstatus)){
 	    .no-border{border: 0; -webkit-box-shadow: 0px 0px 0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
 	    .no-border:focus{border: 0; -webkit-box-shadow: 0px 0px 0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
 	    .form-wrapper{border: 1px solid #eee; border-radius: 5px;}
-	    #preview{display: none; margin-bottom: 1em; position: relative; top: 0; right: 0; overflow: hidden;}
+	    #preview{display: none; }
+	    #preview .preview-image{position: relative; top: 0; right: 0; margin-bottom: 1em; padding: .5em; overflow: hidden; background-color: #ebebeb;}
 	    #preview img{width: 100%;}
-	    #preview-label{position: absolute; width: 100%; left: 0; bottom: 0; text-align: center; font-weight: bold;}
+	    #preview-label{position: absolute; width: 100%; left: 0; bottom: 1em; text-align: center; font-weight: bold;}
 	    .form i{font-weight: bold; color: red;}
 	</style>
 </head>
@@ -166,23 +167,24 @@ if(!empty($this->uploadstatus)){
 				                </select> 
 				            </div>
 				            <div class="control-group">
-				                <label>When was this picture taken? <i class="icon-eye-open"></i></label>
+				                <label>When was this picture taken?</label>
 				                <input type="text" id="date-year" class="date-input input-small" placeholder="Year" />
 				                <input type="text" id="date-month" class="date-input input-mini" placeholder="Month" />
 				                <input type="text" id="date-day" class="date-input input-mini" placeholder="Day" />
-				                <input type="text" name="date" id="date" class="no-border" value="0000-00-00" />
+				                <input type="text" name="date" id="date" class="no-border " value="0000-00-00" />
 				                <p class="muted"><b>Tip:</b> Enter as much of the date as you can, starting with the year</p>
 				            </div>
 					        <hr />
 						    <div class="control-group">
 						        <label>Add a short, descriptive caption. <i>*</i></label>
-						        <input type="text" id="FILETITLE" name="title" value="" maxlength="128000" class="input-xxlarge" placeholder="" />
+						        <input type="text" id="FILETITLE" name="title" value="" maxlength="128000" class="input-xxlarge " placeholder="" />
 						    </div>
 						    <div class="control-group">
 						        <label>Describe what is going on in the picture. Try to include the names of poeple or places and your relationship to them. We would also like to know how you came to have this photograph. Is it a family photo? From a company's archive? <i>*</i></label>
-						        <textarea name="descri" value="" maxlength="128000" class="input-xxlarge" rows="8" placeholder=""></textarea>
+						        <textarea id="description" name="descri" value="" maxlength="128000" class="input-xxlarge " rows="8" placeholder=""></textarea>
 						    </div>
 						    <hr />
+						    <p class="alert alert-info">Your personal information will be kept private.</p>
 				            <div class="control-group">
 				                <label>What is your name? <i>*</i></label>
 				                <input type="text" name="contri" id="contri" />
@@ -198,8 +200,16 @@ if(!empty($this->uploadstatus)){
 				            <input type="submit" value="Submit" class="btn" />
 				        </div>
 				        <div id="preview" class="span5">
-                            <img src="" id="preview-image" class="thumbnail" />
-                            <p id="preview-label">Preview</p>
+				            <div class="preview-image">
+                                <img src="" id="preview-image" />
+                                <p id="preview-label">Preview</p>
+                            </div>
+                            <div class="preview-text">
+                                <p>Title: <span id="preview-FILETITLE"></span></p>
+                                <p>Description: <span id="preview-description"></span></p>
+                                <p>Date: <span id="preview-date"></span></p>
+                                <p>Format: <span id="preview-format"></span></p>
+                            </div>
                        </div>
 				    </div><!--closing div for image row-->
                 </fieldset>
@@ -251,7 +261,7 @@ if(!empty($this->uploadstatus)){
 	                    $('#disagreement').fadeIn(); 
 	                    break;
 	                case 'yes':
-	                    $('#terms').fadeOut();
+	                    $('#terms').hide();
 	                    $('#form').fadeIn();
 	                    break;
 	            }
@@ -267,6 +277,7 @@ if(!empty($this->uploadstatus)){
 	            d = checkDay(d);
 	            
 	            $('#date').val((y.length != 0?y:'0000') + '-' + (m.length != 0?formatNumber(m):'00') + '-' + (d.length != 0?formatNumber(d):'00'));
+	            $('#preview-date').html($('#date').val());
 	        });
 	        
 	        $('#CISOBROWSE').change(function(e){
@@ -282,7 +293,7 @@ if(!empty($this->uploadstatus)){
 					    var file = files[0];
 					    var reader = new FileReader();
 					    reader.onload = function(e){
-						    $('#preview-image').attr('src', e.target.result).parent().fadeIn();
+						    $('#preview-image').attr('src', e.target.result).parent().parent().fadeIn();
 					    };
 					    reader.readAsDataURL(file);
 				    }
