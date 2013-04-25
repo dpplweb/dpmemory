@@ -768,7 +768,7 @@ a#search_display_dd_link:hover{text-decoration: none;}
 /* -----------------------  Search Bar Styles  ------------------------------ */
 
 #search {
-	height: 28px;
+	height: 30px;
 	background-color: #fff;
 	margin-bottom: -3px;
 	padding: 5px 20px;
@@ -1109,9 +1109,9 @@ span.breadcrumb_text_1 {
 }
 
 #link_bar_content {
-	height: 24px;
+	height: 26px;
 	font-size: 10px;
-	margin: 2px 0 0 0;
+	margin: 3px 0 0 0;
 	white-space: nowrap;
 	overflow: visible;
 	padding: 0;
@@ -2346,8 +2346,7 @@ input[type="button"][disabled] {
 #img_view_search_box {
 	width: auto;
 	height: 30px;
-	border: 1px solid #ddd;
-	border-bottom: 0;
+	border: 0;
 	background-color: #fff;
 	margin: 0 0 0 10px;
 	padding-top: 1px;
@@ -2356,9 +2355,9 @@ input[type="button"][disabled] {
 
 .img_view_search_box_hover {
 	color: #000000;
-	background-color: #e6e6e6 !important;
+	background-color: #fff !important;
 	text-decoration: underline;
-	border: 1px solid #AAAAAA !important;
+	border: 0 !important;
 	cursor: pointer;
 }
 
