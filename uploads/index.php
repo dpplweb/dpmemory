@@ -1,5 +1,4 @@
 <?php
-/*
 if(!empty($this->uploadstatus)){
   ?>
 <div class="modal-backdrop" id="form-response">
@@ -28,7 +27,7 @@ if(!empty($this->uploadstatus)){
     </div>
   </div>  
   <?php
-}*/
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +39,8 @@ if(!empty($this->uploadstatus)){
 	    .container{margin: 2em auto;}
 	    #breadcrumb_top{display: none;}
 	    .terms{margin-bottom: 1em; padding: 1em; border: 1px solid #ddd; border-radius: 5px;}
+	    ul.caption{margin-top: 1em; margin-left: 0; text-align: center;}
+	    ul.caption li{display: inline-block; margin: 0 4px; font-style: oblique; font-size: 80%;}
 	    .agree{margin: .5em; }
 	    legend{border: 0; font-weight: bold;}
 	    .no-border{border: 0; -webkit-box-shadow: 0px 0px 0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
@@ -56,9 +57,9 @@ if(!empty($this->uploadstatus)){
 <div class="container">
 	<div class="row">
 		<div class="span8">
-			<h1>My Des Plaines Memory <small>Contribute</small></h1>
-			<p>Thank you for your interest in contributing to My Des Plaines Memory!</p>
-			<p>We&rsquo;re looking for photographs that depict important people, institutions or events of historical significance to Des Plaines. If you have any interesting historical photographs in your family or business collection you can upload them to My Des Plaines Memory and share your personal connection to our local history.</p>
+			<h1>Contribute</h1>
+			<p>Thank you for your interest in contributing to Des Plaines Memory!</p>
+			<p>We&rsquo;re looking for photographs that depict important people, institutions or events of historical significance to Des Plaines. If you have any interesting historical photographs in your family or business collection you can upload them to Des Plaines Memory and share your personal connection to our local history.</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
@@ -70,12 +71,12 @@ if(!empty($this->uploadstatus)){
 				</ul>
 			</div>
 		</div>
-	</div><!--first row-->
+	</div><!--closing div for intro row-->
 	<hr />
 	<div class="row" id="overview">
         <div class="span4">
 	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/coll_p15770coll2/resources/custompages/contribute/gear32.png" />
+	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute/gear32.png" />
 	        </div>
             <h2>How it works</h2>
 	        <ul>
@@ -86,7 +87,7 @@ if(!empty($this->uploadstatus)){
 	    </div>
 	    <div class="span4">
 	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/coll_p15770coll2/resources/custompages/contribute/upload32.png" />
+	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute/upload32.png" />
 	        </div>
             <h2>Uploads</h2>
             <ul>
@@ -97,7 +98,7 @@ if(!empty($this->uploadstatus)){
 	    </div>
 	    <div class="span4">
 	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/coll_p15770coll2/resources/custompages/contribute/warning32.png" />
+	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute/warning32.png" />
 	        </div>
 	        <h2>We won't accept</h2>
             <ul>
@@ -108,7 +109,29 @@ if(!empty($this->uploadstatus)){
                 <li>Personal identifying information</li>
              </ul>
 	    </div>
-	</div><!--second row-->
+	    <div class="span12">
+	        <div class="overview-icon">
+	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute//cc32.png" />
+	        </div>
+	        <h2>Creative Commons</h2>
+	        <div class="row">
+	            <div class="span8">
+	                <p>Anything you upload to Des Plaines Memory will be covered by a Creative Commons license. This means that you agree to share your work as long as it is attributed to you, not used for commercial purposes, and future resues have to use the same license.</p>
+	                <p><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Review the Creative Commons license</a></p>
+	            </div>
+	            <div class="span4">
+	                <div>
+	                    <img src="/ui/custom/default/collection/default/resources/custompages/contribute/cc-license-icons.png" />
+	                    <ul class="caption">
+	                        <li>Attributon</li>
+	                        <li>Noncommercial</li> 
+	                        <li>Share alike</li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div><!--closing div for overview row-->
 	<hr />
 	<div class="row" id="terms">
 	    <div class="span12">
@@ -130,7 +153,7 @@ if(!empty($this->uploadstatus)){
 				    <p>By publishing content on Des Plaines Memory, you agree to the following:</p>
 				    <ul>
 				        <li>User grants permission to the Des Plaines Public Library and the Des Plaines History Center to reproduce and distribute the submitted material for non-commercial use.</li>
-				        <li>The Des Plaines Public Library reserves the right to edit, delete or reject submissions to My Des Plaines Memory.</li>
+				        <li>The Des Plaines Public Library reserves the right to edit, delete or reject submissions to Des Plaines Memory.</li>
 				        <li>User is the lawful copyright or intellectual property right holder of the material submitted.</li>
 				        <li>Material submitted will be attributed to user.</li>
 				        <li>Photographs found to be in violation of copyright will be deleted immediately.</li>
@@ -145,12 +168,12 @@ if(!empty($this->uploadstatus)){
                 </div>
 		    </div>
 		</div>
-	</div><!--closing div for terms row-->
+	</div><!--end of terms-->
 	<div class="row" id="form">
 		<div class="span12">
 		    <h2>Upload and Describe</h2>
-			<form enctype="multipart/form-data" id="cdmWebAddForm" method="POST" action="/utils/webadd/collection/p15770coll2">
-				    <input type="hidden" name="webaddurl" value="contribute" />
+			<form enctype="multipart/form-data" id="cdmWebAddForm" method="POST" action="/utils/webadd/collection/<?php echo $this->collection;?>">
+				    <input type="hidden" name="webaddurl" value="<?php echo $this->cdmCustomPage; ?>" />
 				    <div class="row">
 	                    <div class="span7" >
 	                        <div class="control-group">
@@ -215,7 +238,7 @@ if(!empty($this->uploadstatus)){
                 </fieldset>
 			</form>
 		</div>
-	</div><!--closing div for form row-->
+	</div><!--closing div for upload form-->
 	<div class="modal-backdrop" id="disagreement">
 	    <div class="modal">
 		    <div class="modal-body">
@@ -227,28 +250,20 @@ if(!empty($this->uploadstatus)){
 </div><!--container-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>
-	  /*var fieldnames = new Array();
-	  var i = 0;
-	  fieldnames[i++] = new Array("title","Title");
-	  fieldnames[i++] = new Array("subjec","Subject");
-	  fieldnames[i++] = new Array("descri","Description");
-	  fieldnames[i++] = new Array("creato","Creator");
-	  fieldnames[i++] = new Array("publis","Publisher");
-	  fieldnames[i++] = new Array("date","Date");
-	  fieldnames[i++] = new Array("type","Type");
-	  fieldnames[i++] = new Array("format","Format");
-	  fieldnames[i++] = new Array("contri","Contributors");
-	  fieldnames[i++] = new Array("identi","Identifier");
-	  fieldnames[i++] = new Array("source","Source");
-	  fieldnames[i++] = new Array("langua","Language");
-	  fieldnames[i++] = new Array("relati","Relation");
-	  fieldnames[i++] = new Array("covera","Coverage");
-	  fieldnames[i++] = new Array("rights","Rights");
-	  fieldnames[i++] = new Array("audien","Audience");*/
-
-
 	  $(document).ready(function(){
-	        $('#form, #disagreement').hide();
+	        //set up, read agreement cookie and hide/show form accordingly
+	        var cookie = readCookie('upload-agreement');
+	        
+	        $('#disagreement').hide();
+	        
+	        if (cookie){
+	            $('#terms').hide();
+	            $('#form').show();
+	        }
+	        else{
+	            $('#form').hide();
+	        }
+	        
 	        $('.close').click(function(){
 	            $(this).parents('.modal-backdrop').fadeOut();
 	            return false;
@@ -258,11 +273,12 @@ if(!empty($this->uploadstatus)){
 	            console.log(agree);
 	            switch (agree){
 	                case 'no':
-	                    $('#disagreement').fadeIn(); 
+	                    $('#disagreement').show(); 
 	                    break;
 	                case 'yes':
+	                    createCookie('upload-agreement', 'yes', 60);
 	                    $('#terms').hide();
-	                    $('#form').fadeIn();
+	                    $('#form').show();
 	                    break;
 	            }
 	            return false;
@@ -388,6 +404,29 @@ if(!empty($this->uploadstatus)){
 	        return v;
 	    }
 	  }
+	  
+	  function createCookie(name,value,days) {
+		    if (days) {
+			    var date = new Date();
+			    date.setTime(date.getTime()+(days*24*60*60*1000));
+			    var expires = "; expires="+date.toGMTString();
+		    }
+		    else expires = "";
+		
+		    document.cookie = name+"="+value+expires+"; path=/";
+	    };
+
+        function readCookie(name) {
+	        var nameEQ = name + "=";
+	        var ca = document.cookie.split(';');
+	        for(var i=0;i < ca.length;i++) {
+		        var c = ca[i];
+		        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	        }
+		
+	        return null;
+        }
 	  
 	</script>
 </body>
