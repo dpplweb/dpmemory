@@ -10,7 +10,6 @@
 		<div class="span8">
 			<h1>Local Newspapers</h1>
 			<p>This collection brings together issues of several local newspapers dating from 1939 to the present. The oldest newspapers were badly damaged by water and mold and are preserved here for historical research.</p>
-			<p style="margin-top: 2em; font-style: oblique;">We recommend viewing the Local Newspaper collection with the <a href="http://www.mozilla.org/en-US/firefox/new" rel="nofollow">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" rel="nofollow">Google Chrome</a> browser.</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
@@ -31,7 +30,7 @@
 		
 		$projects = array(
 			'Des Plaines Suburban Times' => array('description' => 'You will find issues for the Des Plaines Suburban Times for following year(s): 1939-1941, 1944-1945, 1947-1952, 1954, 1957-1970', 'param' => 'des%20plaines%20suburban%20times', 'thumb' => 'dp-suburban-times-thumb', 'item_id' => '68'),
-			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2010, 2011', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
+			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2008, 2009, 2010, 2011, 2012. Current year updated quarterly.', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
 			'Edison Norwood Review' => array('description' => 'You will find issues for the Edison Norwood Review for the following year(s): 1952 (October, November and December only)', 'param' => 'edison%20norwood%20review', 'thumb' => 'en-review-thumb', 'item_id' => '3229'),
 			);
 		$i = 0;

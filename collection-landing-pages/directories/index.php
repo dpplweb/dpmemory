@@ -10,7 +10,6 @@
 		<div class="span8">
 			<h1>Telephone Directories</h1>
 			<p>This collection brings together telephone directories from Des Plaines and the surrounding communities. The directories are a great tool for doing genealogical and historical research.</p>
-			<p style="margin-top: 2em; font-style: oblique;">We recommend viewing the Telephone Directories collection with the <a href="http://www.mozilla.org/en-US/firefox/new" rel="nofollow">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" rel="nofollow">Google Chrome</a> browser.</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
