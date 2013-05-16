@@ -1,0 +1,16 @@
+.container{margin: 2em auto;}
+#breadcrumb_top{display: none;}
+.terms{margin-bottom: 1em; padding: 1em; border: 1px solid #ddd; border-radius: 5px;}
+ul.caption{margin-top: 1em; margin-left: 0; text-align: center;}
+ul.caption li{display: inline-block; margin: 0 4px; font-style: oblique; font-size: 80%;}
+.agree{margin: .5em; }
+legend{border: 0; font-weight: bold;}
+.no-border{border: 0; -webkit-box-shadow: 0px 0px 0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
+.no-border:focus{border: 0; -webkit-box-shadow: 0px 0px 0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
+.form-wrapper{border: 1px solid #eee; border-radius: 5px;}
+#preview{display: none; }
+#preview .preview-image{position: relative; top: 0; right: 0; margin-bottom: 1em; padding: .5em; overflow: hidden; background-color: #ebebeb;}
+#preview img{width: 100%;}
+#preview-label{position: absolute; width: 100%; left: 0; bottom: 1em; text-align: center; font-weight: bold;}
+form i{font-weight: bold; color: red;}
+.error{margin-top: -.5em; color: red;}
