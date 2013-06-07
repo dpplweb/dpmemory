@@ -37,7 +37,7 @@
 	        <h3>Recent contributions</h3>
 	        <ul class="thumbnails">
 	        <?php
-
+                //define how many items to display
                 $max_items = 4;
                 $fh = file_get_contents('http://cdm15770.contentdm.oclc.org:81/dmwebservices/index.php?q=dmGetRecent/' . $this->collection . '/'. $max_items . '/title/json');
                 $json = json_decode($fh);
@@ -55,7 +55,7 @@
                     foreach($items as $item) {
                          $link = str_replace('{pointer}', $item->pointer, $item_base_url);
                          $image_link = str_replace('{pointer}', $item->pointer, $img_base_url);
-                         echo '<li class="span3"><a href="' . $link . '" class="thumbnail"><img src="' . $image_link . '" alt="Image with title ' . $item->title . '" title="' . $item->title . '" /></a></li>';
+                         echo '<li class="span3 recent-item"><a href="' . $link . '" class="thumbnail"><img src="' . $image_link . '" alt="Image with title ' . $item->title . '" title="' . $item->title . '" /></a></li>';
                     }
                }
             ?>
