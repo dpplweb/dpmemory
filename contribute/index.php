@@ -188,7 +188,7 @@ if(!empty($this->uploadstatus)){
 						        <input type="text" id="FILETITLE" name="title" value="" maxlength="128000" class="required input-xxlarge " placeholder="" />
 						    </div>
 						    <div class="control-group">
-						        <label>Describe what is going on in the picture. Try to include the names of poeple or places and your relationship to them. We would also like to know how you came to have this photograph. Is it a family photo? From a company's archive? <i>*</i></label>
+						        <label>Describe what is going on in the picture. Try to include the names of people or places and your relationship to them. We would also like to know how you came to have this photograph. Is it a family photo? From a company's archive? <i>*</i></label>
 						        <textarea id="description" name="descri" value="" maxlength="128000" class="required input-xxlarge " rows="8" placeholder=""></textarea>
 						    </div>
 						    <hr />
