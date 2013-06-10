@@ -194,7 +194,7 @@ a:hover {
   color: #333;
 }
 
-#details #metadata_subjec a, #details #metadata_format a, #details #metadata_contri a, #details #metadata_projec a, #details #metadata_object_subjec a, #details #metadata_object_format a, #details #metadata_object_contri a, #details #metadata_object_projec a{
+#metadata_compan a, #metadata_contri a, #metadata_format a, #metadata_object_contri a, #metadata_object_format a, #metadata_object_named a, #metadata_object_projec a, #metadata_object_subjec a, #metadata_projec a, #metadata_relate a, #metadata_subjec a{
   color: #63af00 !important;
 }
 
@@ -1191,7 +1191,8 @@ span.breadcrumb_text_1 {
 
 #title_desc_bar {
 	vertical-align: middle;
-	height: 43px;
+    height: auto;
+	max-height: 43px;
 }
 
 #title_desc_bar.title_desc_bar_fulltext { height: 35px; }
@@ -2454,17 +2455,17 @@ pre#full_text_container{font-family: inherit;}
 /*------------------------------Compound Object Styles -----------------------------------*/
 
 #co-sidebar-content {
-    margin-top: 1em;
+    margin-top: 0;
 	border: 0 !important;
 }
 
 #co_view_contents h3, #co_view_thumb h3 {
 	border-bottom: 0;
-	padding: 0 5px;
+	padding: 0;
 	margin: 0;
 	overflow: hidden;
 	display: block;
-	height: 3em;
+	height: auto;
 }
 
 .co-content-body, .tabs ul.co-content-body {
@@ -3401,7 +3402,7 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentTop {
 	width: 100%;
-	height: auto !important;
+	max-height: 140px !important;
 	padding-top: 0;
 	position: relative;
 	overflow: hidden;
@@ -3423,11 +3424,12 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentBottom {
     position: absolute;
-    bottom:.5em;
+    bottom: 10px;
 	width: 145px;
-	height: auto !important;
+	height: 63px !important;
 	margin-top: 0 !important;
 	padding: 0 10px;
+    overflow: hidden;
 }
 
 .listContentBottom .body_link_11 {
@@ -4100,7 +4102,7 @@ div.quickview_image_col img.quickview_thumb {
 }
 
 #report_abuse_cancelbtn, #report_abuse_submitbtn { margin-top: 10px; }
-#cpd_search_tally_thumb, #cpd_search_tally_content { font-weight: normal; }
+#cpd_search_tally_thumb, #cpd_search_tally_content { margin-top: 10px; font-weight: normal; }
 
 a.cdm_disabled_link {
 	color: #525252;
