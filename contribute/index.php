@@ -60,33 +60,24 @@ if(!empty($this->uploadstatus)){
 	<hr />
 	<div class="row" id="overview">
         <div class="span4">
-	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute/gear32.png" />
-	        </div>
-            <h2>How it works</h2>
-	        <ul>
+            <h2><i class="overview-icon overview-gear"></i>How it works</h2>
+	        <ul class="unstyled">
 	            <li>Fill out the form with your photograph attached.</li> 
 	            <li>It may take between 1 to 5 days for your post(s) to appear on the site.</li> 
 	            <li>Your contact information is for internal use only and will not appear in your post.</li>
 	        </ul>
 	    </div>
 	    <div class="span4">
-	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute/upload32.png" />
-	        </div>
-            <h2>Uploads</h2>
-            <ul>
+            <h2><i class="overview-icon overview-uploads"></i>Uploads</h2>
+            <ul class="unstyled">
 	            <li>Submit scanned and digital photos at 150 ppi to 300 ppi resolution.</li>
 	            <li>File types .jpg, .png, and .tif are accepted.</li> 
 	            <li>Do not include spaces or special characters (&, #, !, ?, etc.) in filenames.</li>
 	        </ul>
 	    </div>
 	    <div class="span4">
-	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute/warning32.png" />
-	        </div>
-	        <h2>We won't accept</h2>
-            <ul>
+	        <h2><i class="overview-icon overview-warning"></i>We won't accept</h2>
+            <ul class="unstyled">
                 <li>Inflammatory, obscene, offense, or libelous material</li>
                 <li>Internet links in your content</li>
                 <li>Promotion of product or service</li>
@@ -95,10 +86,7 @@ if(!empty($this->uploadstatus)){
              </ul>
 	    </div>
 	    <div class="span12">
-	        <div class="overview-icon">
-	            <img src="/ui/custom/default/collection/default/resources/custompages/contribute//cc32.png" />
-	        </div>
-	        <h2>Creative Commons</h2>
+	        <h2><i class="overview-icon overview-cc"></i>Creative Commons</h2>
 	        <div class="row">
 	            <div class="span8">
 	                <p>Anything you upload to <?php echo $this->collectionNames[$this->collection] ?> will be covered by a Creative Commons license. This means that you agree to share your work as long as it is attributed to you, not used for commercial purposes, and future resues have to use the same license.</p>
@@ -159,6 +147,7 @@ if(!empty($this->uploadstatus)){
 		    <h2>Upload and Describe</h2>
 			<form enctype="multipart/form-data" id="cdmWebAddForm" method="POST" action="/utils/webadd/collection/<?php echo $this->collection;?>">
 				    <input type="hidden" name="webaddurl" value="<?php echo $this->cdmCustomPage; ?>" />
+                    <input type="hidden" name="rights" value="This material may be protected by U.S. Copyright Law (Title 17 U.S. Code) and is intended solely for personal or educational use. Any commercial use without permission is prohibited." />
 				    <div class="row">
 	                    <div class="span7" >
 	                        <div class="control-group">
@@ -167,7 +156,7 @@ if(!empty($this->uploadstatus)){
 			                </div>
 					       <div class="control-group">
 				                <label>What type of picture is this? <i>*</i></label>
-				                <select name="format" id="format" class="required">
+				                <select name="format" id="format" class="required preview">
 				                    <option value=""></option>
 				                    <option value="black and white photograph">Black & White Photograph</option>
 				                    <option value="color photograph">Color Photograph</option>
@@ -185,18 +174,18 @@ if(!empty($this->uploadstatus)){
 					        <hr />
 						    <div class="control-group">
 						        <label>Add a short, descriptive caption. <i>*</i></label>
-						        <input type="text" id="FILETITLE" name="title" value="" maxlength="128000" class="required input-xxlarge " placeholder="" />
+						        <input type="text" id="FILETITLE" name="title" value="" maxlength="128000" class="required preview input-xxlarge" placeholder="" />
 						    </div>
 						    <div class="control-group">
 						        <label>Describe what is going on in the picture. Try to include the names of people or places and your relationship to them. We would also like to know how you came to have this photograph. Is it a family photo? From a company's archive? <i>*</i></label>
-						        <textarea id="description" name="descri" value="" maxlength="128000" class="required input-xxlarge " rows="8" placeholder=""></textarea>
+						        <textarea id="description" name="descri" value="" maxlength="128000" class="required preview input-xxlarge " rows="8" placeholder=""></textarea>
 						    </div>
 						    <hr />
-						    <p class="alert alert-info">Your personal information will be kept private.</p>
 				            <div class="control-group">
 				                <label>What is your name? <i>*</i></label>
 				                <input type="text" name="contri" id="contri" class="required" />
 				            </div>
+                            <p class="alert alert-info">Your personal information will be kept private.</p>
 				            <div class="control-group">
 				                <label>What is your email address? <i>*</i></label>
 				                <input type="text" name="email" id="email" class="required" placeholder="example@example.com" />
@@ -207,14 +196,14 @@ if(!empty($this->uploadstatus)){
 				            </div>
 				            <input type="submit" value="Submit" class="btn" />
 				        </div>
-				        <div id="preview" class="span5">
+				        <div id="preview" class="span4 offset1">
 				            <div class="preview-image">
                                 <img src="" id="preview-image" />
                                 <p id="preview-label">Preview</p>
                             </div>
                             <div class="preview-text">
-                                <p>Title: <span id="preview-FILETITLE"></span></p>
-                                <p>Description: <span id="preview-description"></span></p>
+                                <p>Title: <span id="preview-title"></span></p>
+                                <p>Description: <span id="preview-descri"></span></p>
                                 <p>Date: <span id="preview-date"></span></p>
                                 <p>Format: <span id="preview-format"></span></p>
                             </div>
