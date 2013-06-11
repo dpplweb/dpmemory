@@ -3380,7 +3380,7 @@ a.cite_dialog_text_2 {
 #cdmResultsBrowseAllItemsView .listItem {
     position: relative;
 	width: 161px;
-	height: 180px;
+	height: 190px;
 	margin: 5px 20px 15px 0;
 	padding: 2px;
 	border: 1px solid #eee;
@@ -3404,7 +3404,7 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentTop {
 	width: 100%;
-	max-height: 140px !important;
+	max-height: 120px !important;
 	padding-top: 0;
 	position: relative;
 	overflow: hidden;
@@ -3426,17 +3426,21 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentBottom {
     position: absolute;
-    bottom: 20px;
+    bottom: 12px;
 	width: 145px;
-	height: 56px !important;
-	margin-top: 0 !important;
+    margin-top: 0 !important;
 	padding: 0 10px;
+    background-color: #fff;
     overflow: hidden;
 }
 
 .listContentBottom .body_link_11 {
-	font-size: .9em !important;
+    display: block;
+    height: 48px;
+    line-height: 1.4;
+	font-size: 12px !important;
 	color: #888;
+    overflow: hidden;
 }
 
 #cdmResultsBrowseAllItemsView img.results_tn_img {

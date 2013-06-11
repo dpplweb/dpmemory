@@ -16,9 +16,9 @@ $(function(){
             $.getJSON(comments_url, function(data){
                 //if item has comments then append to element
                 if (data.count > 0){
-                    item.parents('.listItem').append('<div class="dpm-comment-count"><i class="icon-2 ui-icon-comment"></i>' + data.count + '</div>');
+                    item.parents('.listItem').append('<div class="dpm-comment-count"><i class="icon_2 ui-icon-comment"></i>' + data.count + '</div>');
                 }
             });
         });   
     }
-})();
+});
