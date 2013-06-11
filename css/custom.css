@@ -1754,7 +1754,7 @@ input[type="button"][disabled] {
 
 /* ------------------------------- Icon only Styles --------------------------------------------------*/
 
-.icon_16, .icon_14, .icon_12, .icon_11, .icon_10 {
+.icon_16, .icon_14, .icon_12, .icon_11, .icon_10, .icon_2{
 	height: 13px;
 	width: 12px;
 	background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png);
@@ -1762,11 +1762,13 @@ input[type="button"][disabled] {
 	display: inline-block;
 }
 
+
 .icon_16 { margin: 5px 2px; }
 .icon_14 { margin: 4px 2px; }
 .icon_12 { margin: 3px 2px; }
 .icon_11 { margin: 2px 2px; }
 .icon_10 { margin: 3px 2px;}
+.icon_2 {margin: 0 2px;}
 .icon_nav_top_left { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 .icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
 
@@ -3424,9 +3426,9 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentBottom {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
 	width: 145px;
-	height: 63px !important;
+	height: 56px !important;
 	margin-top: 0 !important;
 	padding: 0 10px;
     overflow: hidden;
@@ -3449,6 +3451,16 @@ a.cite_dialog_text_2 {
 }
 
 #cdmResultsBrowseAllItemsView .resultFavoriteContainer, #cdmResultsGridView .resultFavoriteContainer { cursor: pointer; }
+
+/*added to show comment count below items*/
+.dpm-comment-count{
+  position: absolute;
+  bottom: 3px;
+  width: 90%;
+  text-align: right;
+  color: #888;
+  font-size: 80%;
+}
 
 /* results grid view */
 
