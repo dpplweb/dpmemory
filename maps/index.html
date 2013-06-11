@@ -5,33 +5,44 @@
     <title>Map</title>
     <style>
       html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0; font-family: sans-serif; font-size: 13px;}
-      #map-canvas { width: 80%; height: 100%; float: left; }
-      #results {position: relative; width: 20%; height: 100%; float: right; padding: 6px; box-sizing: border-box; overflow-y: scroll; overflow-x: hidden;}
+      body { height: 100%; margin: 0; padding: 0; font-family: sans-serif; font-size: 13px; color: #333; overflow: hidden;}
+      .header{height: 32px; padding: 0 6px; background-color: #333;}
+      .branding{display: block; height: 100%; line-height: 32px; font-weight: bold; color: #63af00; text-decoration: none; text-transform: uppercase;}
+      .white{font-weight: normal; color: #fff;}
+      #map-canvas { width: 80%; height: 100%; float: left; background-color: #eee;}
+      #results {position: relative; width: 18.9%; height: 100%; float: right; padding: 0 0.46875%; background-color: #fff; overflow-y: scroll; overflow-x: hidden;}
       #results h2{margin-bottom: 0;}
       #results ul{list-style: none; margin: 0; padding: 0; text-align: center;}
       #results ul li{padding: 6px 0; line-height: 1.5; border-top: 1px solid #eee;}
+      #results ul li:last-child{border-bottom: 1px solid #eee;}
+      #results ul li a{text-decoration: none;}
+      #results-count p{margin-top: 6px;}
+      .item-title{display: block; font-size: 11px; color: #333;}
       .count{color: #888;}
       .label{background-color: red; color: #fff; width: 14px; height: 14px; line-height: 12px; border-radius: 9px; border: 1px solid #111; font-size: 10px; font-weight: bold; text-align: center;}
       .load{position: absolute; top: 10%; height: 32px; width: 100%; background: url('ajax-loader.gif') no-repeat center center;}
     </style>
 </head>
 <body>
+    <div class="header">
+        <a href="#" class="branding"><span class="white">Des Plaines</span> Memory</a>
+    </div>
     <div id="results">
+        <p>Click on map marker to see items related to that location. Results will appear here.</p>
         <h2>Results</h2>
         <div id="results-count"></div>
-        <div id="results-list"><p>Click on map marker to see items related to that location. Results will appear here.</p></div>
+        <div id="results-list"></div>
     </div>
     <div id="map-canvas"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCimpd2qM4HIR8kVRK8yjA-sQ6TpA_Zf_M&sensor=false"></script>
-   <script src="markerwithlabel_packed.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCimpd2qM4HIR8kVRK8yjA-sQ6TpA_Zf_M&sensor=false"></script>
+    <script src="markerwithlabel_packed.js"></script>
     <script>
         $(document).ready(function(){
             
             var mapOptions = {
               center: new google.maps.LatLng(42.037995,-87.874149),
-              zoom: 13,
+              zoom: 14,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             
@@ -39,27 +50,25 @@
                 mapOptions);
                 
             var locations = new Array();
+            var records;
             
             //patterns for detetcting lat lng
             var p = /-*[0-9]{2}\.[0-9]+,/;
             var lat, lng;
-            var count = 0;
                 
                 
             $.getJSON('items.json', function(data){
-                var total = data.pager.total;
-                var records = data.records;
+                records = data.records;
                 $.each(records, function(i, record){
                     if (record.locati.length > 0){
                         var loc = record.locati;
                                                              
                         if (locations[loc]){
-                            locations[loc].push(record.pointer);
+                            locations[loc].push({"id" : record.pointer, "title" : record.title});
                         }
                         else{
-                            locations[loc] = [record.pointer];
+                            locations[loc] = [{"id" : record.pointer, "title" : record.title}];
                         }
-                         count++; 
                     }
                     
                 });
@@ -94,7 +103,7 @@
                                labelInBackground: false
                              });
                              
-                             showItems(marker);
+                             showItems(marker, records);
 	                   } 
                 }
                 
@@ -105,16 +114,26 @@
                     var list, img, key;
                     
                     key = marker.getTitle();
-                    list = '<ul id="' + key + '">';
                     
-                    $.each(locations[key], function(i){
-                        //console.log(locations[key][i]);   
-                        img = '<li><a href="http://www.desplainesmemory.org/cdm/singleitem/collection/p15770coll1/id/' + locations[key][i] + '" target="_blank"><img src="http://www.desplainesmemory.org/utils/getthumbnail/collection/p15770coll1/id/' + locations[key][i] + '"></a></li>';
-                        list+= img;
-                    });
+                    $('#results-list ul').hide();
                     
-                    $('#results-list').html('').append(list);
-                    $('#results-count').html('').append('<p>' + locations[key].length + (locations[key].length == 1?' item':' items') + '</p>');
+                    //console.log($('#' + key).length);
+                    
+                    if ($('#' + key).length != 0){
+                        $('#' + key).show();
+                    }
+                    else{
+                        list = '<ul id="' + key + '">';
+                        
+                        $.each(locations[key], function(i){
+                            console.log(locations[key][i]);  
+                            img = '<li><a href="http://www.desplainesmemory.org/cdm/ref/collection/p15770coll1/id/' + locations[key][i]['id'] + '" class="item-image" target="_blank"><img src="http://www.desplainesmemory.org/utils/getthumbnail/collection/p15770coll1/id/' + locations[key][i]['id'] + '"><span class="item-title">' + locations[key][i]['title'] + '</span></a></li>';
+                            list+= img;
+                        });
+                        
+                        $('#results-list').append(list).show();
+                    }
+                    $('#results-count').html('').append('<p>' + key + ' (' + locations[key].length + (locations[key].length == 1?' item':' items') + ')</p>');
                 });
                 
             }
