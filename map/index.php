@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="#" class="branding"><span class="white">Des Plaines</span> Memory</a>
+        <a href="/" class="branding"><span class="white">Des Plaines</span> Memory</a>
     </div>
     <div id="results">
         <p>Click on map marker to see items related to that location. Results will appear here.</p>
@@ -36,6 +36,7 @@
     <div id="map-canvas"></div>
     <div class="load">Loading map...</div>
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+    <script src="/utils/getstaticcontent/file/js~jquery_1.7.2~jquery-1.7.2.js/type/javascript"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCimpd2qM4HIR8kVRK8yjA-sQ6TpA_Zf_M&sensor=false"></script>
     <script src="markerwithlabel_packed.js"></script>
     <script>
@@ -43,7 +44,7 @@
             $('.load').show();
             
             var mapOptions = {
-              center: new google.maps.LatLng(42.037995,-87.874149),
+              center: new google.maps.LatLng(42.03723,-87.885586),
               zoom: 14,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
