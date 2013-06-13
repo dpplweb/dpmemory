@@ -20,7 +20,7 @@
       .item-title{display: block; font-size: 11px; color: #333;}
       .count{color: #888;}
       .label{background-color: red; color: #fff; width: 14px; height: 14px; line-height: 12px; border-radius: 9px; border: 1px solid #111; font-size: 10px; font-weight: bold; text-align: center;}
-      .load{position: absolute; top: 10%; height: 32px; width: 100%; background: url('ajax-loader.gif') no-repeat center center;}
+      .load{display: none; position: absolute; top: 32px; left: 0; width: 100px; height: 40px; line-height: 40px; padding-left: 46px; background: #fff url('ajax-loader.gif') no-repeat 4px center; z-index: 1000;}
     </style>
 </head>
 <body>
@@ -34,11 +34,13 @@
         <div id="results-list"></div>
     </div>
     <div id="map-canvas"></div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <div class="load">Loading map...</div>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCimpd2qM4HIR8kVRK8yjA-sQ6TpA_Zf_M&sensor=false"></script>
     <script src="markerwithlabel_packed.js"></script>
     <script>
         $(document).ready(function(){
+            $('.load').show();
             
             var mapOptions = {
               center: new google.maps.LatLng(42.037995,-87.874149),
@@ -57,17 +59,17 @@
             var lat, lng;
                 
                 
-            $.getJSON('items.json', function(data){
+            $.getJSON('data.php', {p : 'p15770coll2!p15770coll2'}, function(data){
                 records = data.records;
                 $.each(records, function(i, record){
                     if (record.locati.length > 0){
                         var loc = record.locati;
                                                              
                         if (locations[loc]){
-                            locations[loc].push({"id" : record.pointer, "title" : record.title});
+                            locations[loc].push({"id" : record.pointer, "title" : record.title, "collection" : record.collection});
                         }
                         else{
-                            locations[loc] = [{"id" : record.pointer, "title" : record.title}];
+                            locations[loc] = [{"id" : record.pointer, "title" : record.title, "collection" : record.collection}];
                         }
                     }
                     
@@ -107,6 +109,8 @@
 	                   } 
                 }
                 
+                $('.load').hide();
+                
             });
             
             function showItems(marker){
@@ -127,7 +131,7 @@
                         
                         $.each(locations[key], function(i){
                             console.log(locations[key][i]);  
-                            img = '<li><a href="http://www.desplainesmemory.org/cdm/ref/collection/p15770coll1/id/' + locations[key][i]['id'] + '" class="item-image" target="_blank"><img src="http://www.desplainesmemory.org/utils/getthumbnail/collection/p15770coll1/id/' + locations[key][i]['id'] + '"><span class="item-title">' + locations[key][i]['title'] + '</span></a></li>';
+                            img = '<li><a href="http://www.desplainesmemory.org/cdm/ref/collection' + locations[key][i]['collection'] + '/id/' + locations[key][i]['id'] + '" class="item-image" target="_blank"><img src="http://www.desplainesmemory.org/utils/getthumbnail/collection' + locations[key][i]['collection'] + '/id/' + locations[key][i]['id'] + '"><span class="item-title">' + locations[key][i]['title'] + '</span></a></li>';
                             list+= img;
                         });
                         
