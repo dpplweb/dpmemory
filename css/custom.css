@@ -490,7 +490,7 @@ html body span.clear {
 #nav_top_left_spacer { width: 0px; }
 #nav_top_left>ul.nav li a #nav_top_left_first_link { padding-left: 30px; }
 #nav_footer_left>ul.nav li a { }
-#nav_top_right>ul.nav li a { color: #fff;}
+#nav_top_right>ul.nav li a { color: #999;}
 a#login_link, a#logout_link{color: #999 !important;}
 
 #nav_footer_left>ul.nav li a, #nav_footer_right>ul.nav li a {
@@ -552,6 +552,7 @@ a#login_link, a#logout_link{color: #999 !important;}
 	color: #999;
 	background-color: #333;
 	font-size: 13px;
+    padding-left: 15px;
 }
 
 .nav_li_right_1a { color: #999; }
@@ -571,7 +572,7 @@ a#login_link, a#logout_link{color: #999 !important;}
 	display: none !important;
 }
 
-.nav_top_right_divider { color: #999;}
+.nav_top_right_divider { display: none !important; color: #999;}
 
 /* -----------------------  Nav Top Left Browse Drop Down  ------------------------------ */
 
@@ -1770,7 +1771,7 @@ input[type="button"][disabled] {
 .icon_10 { margin: 3px 2px;}
 .icon_2 {margin: 0 2px;}
 .icon_nav_top_left { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
-.icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
+.icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 
 .icon_link_bar {
