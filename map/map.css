@@ -1,0 +1,16 @@
+/*styles for interactive collection map*/
+.item-map{position: relative;}
+#map-canvas {width: 100%; height: 520px; background-color: #eee;}
+.results-wrapper{position: absolute; top: 40px; right: 20px;}
+#results {position: relative; height: 430px; padding: 10px !important; background-color: #fff; overflow: hidden;}
+#results-list{height: 400px; hoverflow-y: scroll; overflow-x: hidden; border: 1px solid #eee;}
+#results h2{font-size: 100%; margin-bottom: 2px; line-height: 1.5;}
+#results ul{list-style: none; margin: 0; padding: 0; text-align: center;}
+#results ul li{padding: 6px 0 6px 4px; line-height: 1.5; border-bottom: 1px solid #eee;}
+#results ul li:last-child{border-bottom: 0;}
+#results ul li a{text-decoration: none;}
+#results-count{font-weight: normal;}
+.item-title{display: block; font-size: 11px; color: #333;}
+.count{color: #888;}
+.marker-label{background-color: red; color: #fff; width: 14px; height: 14px; line-height: 12px; border-radius: 9px; border: 1px solid #111; font-size: 10px; font-weight: bold; text-align: center;}
+.load{display: none; position: absolute; top: 2px; left: 22px; width: 100px; height: 40px; line-height: 40px; padding-left: 46px; background: #fff url('/ui/custom/default/collection/default/resources/custompages/map/ajax-loader.gif') no-repeat 4px center; z-index: 1000;}

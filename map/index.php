@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Map</title>
-    <style>
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0; font-family: sans-serif; font-size: 13px; color: #333; overflow: hidden;}
-      .header{height: 32px; padding: 0 6px; background-color: #333;}
-      .branding{display: block; height: 100%; line-height: 32px; font-weight: bold; color: #63af00; text-decoration: none; text-transform: uppercase;}
-      .white{font-weight: normal; color: #fff;}
-      #map-canvas { width: 80%; height: 100%; float: left; background-color: #eee;}
-      #results {position: relative; width: 18.9%; height: 100%; float: right; padding: 0 0.46875%; background-color: #fff; overflow-y: scroll; overflow-x: hidden;}
-      #results h2{margin-bottom: 0;}
-      #results ul{list-style: none; margin: 0; padding: 0; text-align: center;}
-      #results ul li{padding: 6px 0; line-height: 1.5; border-top: 1px solid #eee;}
-      #results ul li:last-child{border-bottom: 1px solid #eee;}
-      #results ul li a{text-decoration: none;}
-      #results-count p{margin-top: 6px;}
-      .item-title{display: block; font-size: 11px; color: #333;}
-      .count{color: #888;}
-      .label{background-color: red; color: #fff; width: 14px; height: 14px; line-height: 12px; border-radius: 9px; border: 1px solid #111; font-size: 10px; font-weight: bold; text-align: center;}
-      .load{display: none; position: absolute; top: 32px; left: 0; width: 100px; height: 40px; line-height: 40px; padding-left: 46px; background: #fff url('ajax-loader.gif') no-repeat 4px center; z-index: 1000;}
-    </style>
+	<meta charset="utf-8">
+	<!--<link href="../css/bootstrap.css" rel="stylesheet">-->
+	<link href="/ui/custom/default/collection/default/css/custom/bootstrap.css" rel="stylesheet">
+	<link href="/ui/custom/default/collection/default/resources/custompages/map/map.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <a href="/" class="branding"><span class="white">Des Plaines</span> Memory</a>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <h1>Map</h1>
+            <p>Click on a map marker to see items related to that location. Currently the map displays items from the <a href="/cdm/landingpage/collection/p15770coll1">Des Plaines History</a> and <a href="/cdm/landingpage/collection/p15770coll2">My Des Plaines Memory</a> collections.</p>
+            <hr />
+        </div>
     </div>
-    <div id="results">
-        <p>Click on map marker to see items related to that location. Results will appear here.</p>
-        <h2>Results</h2>
-        <div id="results-count"></div>
-        <div id="results-list"></div>
-    </div>
-    <div id="map-canvas"></div>
-    <div class="load">Loading map...</div>
+	<div class="row item-map">
+		<div class="span12">
+		    <div id="map-canvas"></div>
+		</div>
+	    <div class="span3 results-wrapper">
+			<div class="well" id="results">
+                <h2>Results <span id="results-count"></span></h2>
+                <div id="results-list"></div>
+			</div>
+		</div>
+		<div class="load">Loading map...</div>
+	</div><!--first row-->
+</div></!--container-->
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
-    <script src="/utils/getstaticcontent/file/js~jquery_1.7.2~jquery-1.7.2.js/type/javascript"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCimpd2qM4HIR8kVRK8yjA-sQ6TpA_Zf_M&sensor=false"></script>
-    <script src="markerwithlabel_packed.js"></script>
+    <script src="/ui/custom/default/collection/default/resources/custompages/map/markerwithlabel_packed.js"></script>
     <script>
         $(document).ready(function(){
             $('.load').show();
@@ -60,8 +52,9 @@
             var lat, lng;
                 
                 
-            $.getJSON('data.php', {p : 'p15770coll2!p15770coll2'}, function(data){
-                records = data.records;
+            $.getJSON('/ui/custom/default/collection/default/resources/custompages/map/data.php', {p : 'p15770coll1!p15770coll2'}, function(data){
+//            $.getJSON('items.json', function(data){
+                records = data;
                 $.each(records, function(i, record){
                     if (record.locati.length > 0){
                         var loc = record.locati;
@@ -101,7 +94,7 @@
                                title : key,
                                labelContent: locations[key].length,
                                labelAnchor: new google.maps.Point(0, 40),
-                               labelClass: "label", // the CSS class for the label
+                               labelClass: "marker-label", // the CSS class for the label
                                labelStyle: {opacity: 0.90},
                                labelInBackground: false
                              });
@@ -138,7 +131,7 @@
                         
                         $('#results-list').append(list).show();
                     }
-                    $('#results-count').html('').append('<p>' + key + ' (' + locations[key].length + (locations[key].length == 1?' item':' items') + ')</p>');
+                    $('#results-count').html('(' + locations[key].length + (locations[key].length == 1?' item':' items') + ')');
                 });
                 
             }
