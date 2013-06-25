@@ -407,6 +407,7 @@ html body span.clear {
 }
 
 #nav_top .cdmHelpLink{float: left;}
+#nav_top span.cdmHelpLink{display: none;}
 
 #nav_top b{
   font-weight: normal !important;
@@ -552,7 +553,7 @@ a#login_link, a#logout_link{color: #999 !important;}
 	color: #999;
 	background-color: #333;
 	font-size: 13px;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 .nav_li_right_1a { color: #999; }
