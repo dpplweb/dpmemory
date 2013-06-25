@@ -490,7 +490,7 @@ html body span.clear {
 #nav_top_left_spacer { width: 0px; }
 #nav_top_left>ul.nav li a #nav_top_left_first_link { padding-left: 30px; }
 #nav_footer_left>ul.nav li a { }
-#nav_top_right>ul.nav li a { color: #fff;}
+#nav_top_right>ul.nav li a { color: #999;}
 a#login_link, a#logout_link{color: #999 !important;}
 
 #nav_footer_left>ul.nav li a, #nav_footer_right>ul.nav li a {
@@ -552,6 +552,7 @@ a#login_link, a#logout_link{color: #999 !important;}
 	color: #999;
 	background-color: #333;
 	font-size: 13px;
+	margin-left: 15px;
 }
 
 .nav_li_right_1a { color: #999; }
@@ -571,7 +572,7 @@ a#login_link, a#logout_link{color: #999 !important;}
 	display: none !important;
 }
 
-.nav_top_right_divider { color: #999;}
+.nav_top_right_divider {display: none !important; color: #999;}
 
 /* -----------------------  Nav Top Left Browse Drop Down  ------------------------------ */
 
@@ -1191,7 +1192,8 @@ span.breadcrumb_text_1 {
 
 #title_desc_bar {
 	vertical-align: middle;
-	height: 43px;
+	height: auto;
+	max-height: 43px;
 }
 
 #title_desc_bar.title_desc_bar_fulltext { height: 35px; }
@@ -1769,7 +1771,7 @@ input[type="button"][disabled] {
 .icon_10 { margin: 3px 2px;}
 .icon_2 {margin: 0 2px;}
 .icon_nav_top_left { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
-.icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/lightness-ui-icons_ffffff_256x240.png); }
+.icon_nav_top_right, .icon_nav_fullbrowser { background-image: url(/ui/cdm/default/collection/default/css/images/smoothness-ui-icons_888888_256x240.png); }
 
 
 .icon_link_bar {
@@ -2456,7 +2458,7 @@ pre#full_text_container{font-family: inherit;}
 /*------------------------------Compound Object Styles -----------------------------------*/
 
 #co-sidebar-content {
-    margin-top: 1em;
+    margin-top: 0;
 	border: 0 !important;
 }
 
@@ -2466,7 +2468,7 @@ pre#full_text_container{font-family: inherit;}
 	margin: 0;
 	overflow: hidden;
 	display: block;
-	height: 3em;
+	height: auto;
 }
 
 .co-content-body, .tabs ul.co-content-body {
@@ -3379,7 +3381,7 @@ a.cite_dialog_text_2 {
 #cdmResultsBrowseAllItemsView .listItem {
     position: relative;
 	width: 161px;
-	height: 180px;
+	height: 190px;
 	margin: 5px 20px 15px 0;
 	padding: 2px;
 	border: 1px solid #eee;
@@ -3387,9 +3389,6 @@ a.cite_dialog_text_2 {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 #cdmResultsBrowseAllItemsView .listItem:hover {
@@ -3403,7 +3402,7 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentTop {
 	width: 100%;
-	height: auto !important;
+	height: 120px !important;
 	padding-top: 0;
 	position: relative;
 	overflow: hidden;
@@ -3425,16 +3424,20 @@ a.cite_dialog_text_2 {
 
 #cdmResultsBrowseAllItemsView .listContentBottom {
     position: absolute;
-    bottom: 20px;
+    bottom: 12px;
 	width: 145px;
-	height: 56px !important;
 	margin-top: 0 !important;
 	padding: 0 10px;
+	overflow: hidden;
 }
 
 .listContentBottom .body_link_11 {
-	font-size: .9em !important;
+    display: block;
+    height: 48px;
+	font-size: 12px !important;
+	line-height: 1.4;
 	color: #888;
+	overflow: hidden;
 }
 
 #cdmResultsBrowseAllItemsView img.results_tn_img {
