@@ -8,7 +8,7 @@ ini_set('display_errors', 'On');
     //var_dump($projects);
     
     foreach ($projects as $p){
-       $fh = file_get_contents('http://cdm15770.contentdm.oclc.org:81/dmwebservices/index.php?q=dmQuery/' . $p . '/0/title!locati/title/500/1/0/0/0/0/0/0/json');
+       $fh = file_get_contents('http://server15770.contentdm.oclc.org:81/dmwebservices/index.php?q=dmQuery/' . $p . '/0/title!locati/title/500/1/0/0/0/0/0/0/json');
         $json = json_decode($fh);
         
         foreach ($json->records as $r){

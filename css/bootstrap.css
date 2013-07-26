@@ -3258,10 +3258,11 @@ button.close {
 
 /*Added for social media icons*/
 ul.sm-links li{margin-bottom: .5em;}
-ul.sm-links li a{background: url('../../images/sm-icons-16x16.png') no-repeat; padding-left: 20px; padding-bottom: 1px; color: #333;}
+ul.sm-links li a{background: url('../../images/sm-icons-16x16.png') no-repeat; padding-left: 20px; color: #333;}
 ul.sm-links li a.sm-twitter{background-position: 0px 0px;}
 ul.sm-links li a.sm-tumblr{background-position: 0px -16px;}
-ul.sm-links li a.sm-rss{background-position: 0px -32px;}
+ul.sm-links li a.sm-facebook{background-position: 0px -32px;}
+ul.sm-links li a.sm-rss{background-position: 0px -48px;}
 
 /*added to fix landing page thumbnails from floating over each other*/
 .thumbnail img{
@@ -3272,7 +3273,7 @@ ul.sm-links li a.sm-rss{background-position: 0px -32px;}
 .about-page dd{margin-left: 0;}
 
 /*added to make recent items thumnails a standard height*/
-.recent-item{height: 168px;}
+.recent-item{height: 130px;}
 
 /*added from Bootstrap 2.3*/
 

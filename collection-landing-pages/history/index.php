@@ -17,8 +17,10 @@
 				<p><b>Follow us!</b></p>
 				<p>You can learn more about the Des Plaines Memory project and receive regular updates with one of the following services:</p>
 				<ul class="unstyled sm-links">
+                    <li><a href="http://www.facebook.com/DesPlainesMemory" class="sm-facebook">Facebook</a></li>
 					<li><a href="http://www.twitter.com/DPMemory" class="sm-twitter">Twitter</a></li>
 					<li><a href="http://desplainesmemory.tumblr.com/" class="sm-tumblr">Tumblr</a></li>
+					<?php echo ($this->configs['rssEnabled'] === 'on' ? '<li><a href="/cdm/viewfeed/collection/' . $this->collection . '" class="sm-rss">Updates</a></li>' : ''); ?>
 				</ul>
 			</div>
 		</div>
