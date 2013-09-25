@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="span12">
-                <p><strong>New!</strong> Explore our historical pictures of Des Plaines through an interactive map. <a href="/cdm/map">Get started</a></p>
+                <p>Explore our historical pictures of Des Plaines through an interactive map. <a href="/cdm/map">Get started</a></p>
                 <hr />
             </div>
         </div>
@@ -24,7 +24,7 @@
 							<li class="span3"><a href="/cdm/landingpage/collection/p15770coll1" class="thumbnail"><img src="/ui/custom/default/collection/default/images/dpm-history-3.jpg" /></a></li>
 						</ul>
 						<h2><a href="/cdm/landingpage/collection/p15770coll1">Des Plaines History</a></h2>
-						<p>This collection brings together a wide range of materials related to local Des Plaines history. The bulk of these photographs, postcards, letters, and other items have been selected from the archives of the Des Plaines History Center. If you have any information about anything in the collection, feel free to leave your comments about particular items.</p>
+						<p>This collection brings together a wide range of materials related to local Des Plaines history. The bulk of these old photographs, postcards, letters, and other items have been selected from the archives of the Des Plaines History Center. If you have information about anything in the collection, leave your comments about particular items.</p>
 						<p>
 							<a class="btn" href="/cdm/landingpage/collection/p15770coll1">View Collection</a>
 						</p>
@@ -33,7 +33,7 @@
 			</div>
 			<div class="span4">
 				<p><b>Welcome to Des Plaines Memory</b></p>
-				<p>Please explore our collections. You will find everything from pictures of old homes to street scenes in Des Plaines.</p>
+				<p>Please explore our collections. You will find everything from old pictures of historic homes to street scenes in Des Plaines.</p>
 				<p>If you find something that you like, leave a comment or share it with the "Share" button above the item.</p>
 				<hr />
 				<p>Des Plaines Memory is a collaboration between the Des Plaines Public Library and the Des Plaines History Center.</i></p>
@@ -42,9 +42,11 @@
 					<p><b>Follow us!</b></p>
 					<p>You can learn more about the Des Plaines Memory project and receive regular updates with one of the following services:</p>
 					<ul class="unstyled sm-links">
-						<li><a href="http://www.twitter.com/DPMemory" class="sm-twitter">Twitter</a></li>
-						<li><a href="http://desplainesmemory.tumblr.com" class="sm-tumblr">Tumblr</a></li>
-					</ul>
+                        <li><a href="http://www.facebook.com/DesPlainesMemory" class="sm-facebook">Facebook</a></li>
+                        <li><a href="http://www.twitter.com/DPMemory" class="sm-twitter">Twitter</a></li>
+                        <li><a href="http://desplainesmemory.tumblr.com/" class="sm-tumblr">Tumblr</a></li>
+                        <?php echo ($this->configs['rssEnabled'] === 'on' ? '<li><a href="/cdm/viewfeed/collection/' . $this->collection . '" class="sm-rss">Updates</a></li>' : ''); ?>
+                    </ul>
 				</div>
 			</div>
 		</div>
@@ -92,7 +94,7 @@
 				<address><a href="http://www.desplaineshistory.org/" target="_blank"><strong>Des Plaines History Center</strong><br /></a>781 Pearson Street<br />Des Plaines, Illinois 60016<br />847.391.5399</address>
 			</div>
 			<div class="span6">
-				<p>This project was conceived during Project <a href="http://il.webjunction.org/il-ileadu">ILEAD U</a> --- Illinois Libraries Explore, Apply and Discover: The 21st Century Technology Tools Institute, a continuing education initiative developed by the <a href="http://www.cyberdriveillinois.com/departments/library/home.html">Illiois State Library</a>.</p>
+				<p>This project was conceived during Project <a href="http://il.webjunction.org/il-ileadu">ILEAD U</a> & mdash; Illinois Libraries Explore, Apply and Discover: The 21st Century Technology Tools Institute, a continuing education initiative developed by the <a href="http://www.cyberdriveillinois.com/departments/library/home.html">Illinois State Library</a>.</p>
 			</div>
 		</div>
 	</div> <!-- /container -->

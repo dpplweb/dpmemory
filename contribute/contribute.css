@@ -9,8 +9,16 @@ legend{border: 0; font-weight: bold;}
 .no-border:focus{border: 0; -webkit-box-shadow: 0px 0px 0px; -moz-box-shadow: 0px 0px 0px; box-shadow: 0px 0px 0px;}
 .form-wrapper{border: 1px solid #eee; border-radius: 5px;}
 #preview{display: none; }
-#preview .preview-image{position: relative; top: 0; right: 0; margin-bottom: 1em; padding: .5em; overflow: hidden; background-color: #ebebeb;}
+#preview .preview-image{position: relative; top: 0; right: 0; padding: .5em; overflow: hidden; background-color: #ebebeb;}
+#preview .preview-text{padding: .5em; border: 1px solid #ebebeb; color: #555;}
 #preview img{width: 100%;}
 #preview-label{position: absolute; width: 100%; left: 0; bottom: 1em; text-align: center; font-weight: bold;}
 form i{font-weight: bold; color: red;}
 .error{margin-top: -.5em; color: red;}
+.overview-icon{display: inline-block; height: 24px; width: 24px; margin-right: 8px; background-image: url('/ui/custom/default/collection/default/resources/custompages/contribute/contribute-icons.png'); background-repeat: no-repeat;}
+.overview-gear{background-position: 0px 0px;}
+.overview-uploads{background-position: 0px -24px;}
+.overview-warning{background-position: 0px -48px;}
+.overview-cc{background-position: 0px -72px;}
+.unstyled li{margin-bottom: 6px;}
+

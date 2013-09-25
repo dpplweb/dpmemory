@@ -44,6 +44,10 @@ $(function(){
         $('#preview-date').html($('#date').val());
     });
     
+    $('.preview').change(function(){
+        $('#preview-' + $(this).attr('name')).html($(this).val());
+    });
+    
     $('#CISOBROWSE').change(function(e){
 		e = e.originalEvent;
 		e.stopPropagation();

@@ -18,6 +18,7 @@
 				<p><b>Follow us!</b></p>
 				<p>You can learn more about the Des Plaines Memory project and receive regular updates with one of the following services:</p>
 				<ul class="unstyled sm-links">
+                    <li><a href="http://www.facebook.com/DesPlainesMemory" class="sm-facebook">Facebook</a></li>
 					<li><a href="http://www.twitter.com/DPMemory" class="sm-twitter">Twitter</a></li>
 					<li><a href="http://desplainesmemory.tumblr.com/" class="sm-tumblr">Tumblr</a></li>
 					<?php echo ($this->configs['rssEnabled'] === 'on' ? '<li><a href="/cdm/viewfeed/collection/' . $this->collection . '" class="sm-rss">Updates</a></li>' : ''); ?>
@@ -37,9 +38,9 @@
 	        <h3>Recent contributions</h3>
 	        <ul class="thumbnails">
 	        <?php
-
-                $max_items = 4;
-                $fh = file_get_contents('http://cdm15770.contentdm.oclc.org:81/dmwebservices/index.php?q=dmGetRecent/' . $this->collection . '/'. $max_items . '/title/json');
+                //define how many items to display
+                $max_items = 6;
+                $fh = file_get_contents('https://server15770.contentdm.oclc.org/dmwebservices/index.php?q=dmGetRecent/' . $this->collection . '/'. $max_items . '/title/json');
                 $json = json_decode($fh);
                 
                 if ($json->total == 0){
@@ -49,13 +50,13 @@
                     
                     $items = $json->records;
                     
-                    $img_base_url = 'http://www.desplainesmemory.org/utils/ajaxhelper/?CISOROOT=' . $this->collection . '&CISOPTR={pointer}&action=2&DMSCALE=20&DMWIDTH=210&DMHEIGHT=158&&DMX=40&DMY=45';
+                    $img_base_url = '/utils/getthumbnail/collection/' . $this->collection . '/id/{pointer}';
                     $item_base_url = '/cdm/singleitem/collection/' . $this->collection . '/id/{pointer}';
 
                     foreach($items as $item) {
                          $link = str_replace('{pointer}', $item->pointer, $item_base_url);
                          $image_link = str_replace('{pointer}', $item->pointer, $img_base_url);
-                         echo '<li class="span3"><a href="' . $link . '" class="thumbnail"><img src="' . $image_link . '" alt="Image with title ' . $item->title . '" title="' . $item->title . '" /></a></li>';
+                         echo '<li class="span2 recent-item"><a href="' . $link . '" class="thumbnail"><img src="' . $image_link . '" alt="Image with title ' . $item->title . '" title="' . $item->title . '" /></a></li>';
                     }
                }
             ?>
