@@ -42,32 +42,43 @@
 			'Stereoscopic Photographs' => array('description' => 'Stereoscopic photography was very popular in the 19th and early 20th centuries. By placing two images side-by-side in a viewer, stereoscopes trick the viewer into seeing spatial depth. These photographs, created by Edd R. Schlagel, 1935 – 1938, depict scenes and people in the Des Plaines area using this technology.', 'param' => 'stereoscopic%20photographs', 'thumb' => 'stereoscopic-thumb', 'item_id' => '608'),
 			'Veterans&rsquo; History' => array('description' => 'Materials produced by, for, and about our city&rsquo;s veterans of foreign wars.', 'param' => 'veterans%20histories', 'thumb' => 'veterans-history-thumb', 'item_id' => '1195'),
 			);
-		$i = 0;
-		$c = 0;
+		/*base values for loop*/
+		/*we don't start i at 0 so that modulo will calcuate the end of rows correctly*/
+		$i = 1;
+		/*these could be changed to make rows shorter or longer*/
+		$features = 3;
+		$row_length = 3;
+		$span = 'span4';
+
+		echo'<hr /><div class="row">';
 		
 		foreach ($projects as $key => $project){
-			
-			if ($i % 3 == 0){
-				echo '<hr /><div class="row">';
-				$c = 0;
+
+			if ($i == $features){
+				$row_length = 4;
 			}
-			
+
+			if ($i > $features){
+				$span = 'span3';
+			}
+
+			if ($i % $row_length  == 0){
+				echo '</div><!--end of row-->';
+				echo'<hr /><div class="row">';
+			}
+ 
 			$proj_url = str_replace('{param}', $project['param'], $base_url);
 			$item_url = str_replace('{id}', $project['item_id'], $thumb_url);
 			
-			echo '	<div class="span4">';
+			echo '	<div class="' . $span . '">';
 			if ($has_images == True){
 				echo '		<ul class="thumbnails"><li><a href="' . $proj_url . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_' . $collection_ID . '/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
 			}
 			echo '		<h3><a href="' . $proj_url . '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . $proj_url . '" title="' . $key . '" class="btn">View Items</a></p>';
 			echo '	</div>';
-			
-			if ($c == 2){
-				echo '</div><!--end of row-->';
-			}
+
 			$i++;
-			$c++;
-			
+
 		}
 	?>
 		</div>
