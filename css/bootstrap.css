@@ -382,6 +382,7 @@ h6 small {
 h1 {
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 13px;
 }
 h1 small {
   font-size: 18px;
@@ -3258,7 +3259,7 @@ button.close {
 
 /*Added for social media icons*/
 ul.sm-links li{margin-bottom: .5em;}
-ul.sm-links li a{background: url('../../images/sm-icons-16x16.png') no-repeat; padding-left: 20px; color: #333;}
+ul.sm-links li a{background: url('../../images/sm-icons-16x16.png') no-repeat; padding-left: 20px; padding-bottom: 1px; color: #333;}
 ul.sm-links li a.sm-twitter{background-position: 0px 0px;}
 ul.sm-links li a.sm-tumblr{background-position: 0px -16px;}
 ul.sm-links li a.sm-facebook{background-position: 0px -32px;}
@@ -3274,6 +3275,8 @@ ul.sm-links li a.sm-rss{background-position: 0px -48px;}
 
 /*added to make recent items thumnails a standard height*/
 .recent-item{height: 130px;}
+
+.recent-item img{max-height: 100%;}
 
 /*added from Bootstrap 2.3*/
 
