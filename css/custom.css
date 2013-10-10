@@ -2467,9 +2467,11 @@ pre#full_text_container{font-family: inherit;}
 	border-bottom: 0;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 4px;
 	overflow: hidden;
 	display: block;
 	height: auto;
+	font-weight: normal;
 }
 
 .co-content-body, .tabs ul.co-content-body {
@@ -3032,6 +3034,7 @@ div.results_tn_icon_favs_link {
 	font-size: 13px;
 	color: #C3C3C3;
 	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	overflow: hidden;
 }
 
@@ -3051,8 +3054,7 @@ div.results_tn_icon_favs_link {
     margin: 0;
     margin-right: -1px;
     padding: 1.35%;
-    border-top: 0;
-    border-right: 1px solid #ddd;
+    border: 0;
 }
 
 #details .ui-accordion-content-active{display: block !important;}
@@ -3446,7 +3448,7 @@ a.cite_dialog_text_2 {
 	border: 0;
 	padding: 4px;
 	vertical-align: bottom;
-	max-height: 142px;
+	/*max-height: 142px;*/
 	max-width: 142px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -4164,7 +4166,7 @@ a.cdm_disabled_link {
     padding-left: 1.2em;
 }
 
-#comment_results div[id*='cdm_comment']{padding-top: .5em; border-top: 1px dotted #ddd;}
+#comment_results div[id*='cdm_comment']{margin-bottom: 4px; padding-top: .5em; border-top: 1px dotted #ddd;}
 
 #exportaspage_dialog {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

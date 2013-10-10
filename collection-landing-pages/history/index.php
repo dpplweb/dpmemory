@@ -27,11 +27,12 @@
 	</div><!--first row-->
 	<?php
 		$collection_ID = 'p15770coll1';
-		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}/field/projec/mode/all/conn/and/order/title/ad/asc';
+		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}!{param}/field/projec!relate/mode/all!all/conn/or!and/order/title/ad/asc';
 		$thumb_url = '/cdm/ref/collection/' . $collection_ID . '/id/{id}';
 		$has_images = True;
 		
 		$projects = array(
+			'Arts and Culture' => array('description' => 'Des Plaines has a rich and vibrant arts culture that reflects the diversity of our community. Find photographs of concerts, dancing, festivals, plays and art exhibits here.', 'param' => 'arts%20and%20culture', 'thumb' => 'arts-culture-thumb', 'item_id' => '1332'),
 			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'item_id' => '243'),
 			'Camp Pine' => array('description' => 'Hans Reinhold and Rudolph Velte were among the German P.O.W.s held at Camp Pine in Des Plaines, Illinois during World War II. These few letters and photographs offer insight into their experiences during their time as Camp Pine inmates through their return to Europe after the war.', 'param' => 'camp%20pine', 'thumb' => 'camp-pine-thumb', 'item_id' => '211'),
 			'City of Destiny' => array('description' => 'A collection focusing on Des Plaines&rsquo; city government and elected officials from its origins as a 19th century village to today&rsquo;s city government.', 'param' => 'city%20of%20destiny', 'thumb' => 'city-of-destiny-thumb', 'item_id' => '1195'),
@@ -44,32 +45,43 @@
 			'Stereoscopic Photographs' => array('description' => 'Stereoscopic photography was very popular in the 19th and early 20th centuries. By placing two images side-by-side in a viewer, stereoscopes trick the viewer into seeing spatial depth. These photographs, created by Edd R. Schlagel, 1935 – 1938, depict scenes and people in the Des Plaines area using this technology.', 'param' => 'stereoscopic%20photographs', 'thumb' => 'stereoscopic-thumb', 'item_id' => '608'),
 			'Veterans&rsquo; History' => array('description' => 'Materials produced by, for, and about our city&rsquo;s veterans of foreign wars.', 'param' => 'veterans%20histories', 'thumb' => 'veterans-history-thumb', 'item_id' => '1195'),
 			);
-		$i = 0;
-		$c = 0;
+		/*base values for loop*/
+		/*we don't start i at 0 so that modulo will calcuate the end of rows correctly*/
+		$i = 1;
+		/*these could be changed to make rows shorter or longer*/
+		$features = 3;
+		$row_length = 3;
+		$span = 'span4';
+
+		echo'<hr /><div class="row">';
 		
 		foreach ($projects as $key => $project){
-			
-			if ($i % 3 == 0){
-				echo '<hr /><div class="row">';
-				$c = 0;
+
+			if ($i == $features){
+				$row_length = 4;
 			}
-			
+
+			if ($i > $features){
+				$span = 'span3';
+			}
+
+			if ($i % $row_length  == 0){
+				echo '</div><!--end of row-->';
+				echo'<hr /><div class="row">';
+			}
+ 
 			$proj_url = str_replace('{param}', $project['param'], $base_url);
 			$item_url = str_replace('{id}', $project['item_id'], $thumb_url);
 			
-			echo '	<div class="span4">';
+			echo '	<div class="' . $span . '">';
 			if ($has_images == True){
 				echo '		<ul class="thumbnails"><li><a href="' . $proj_url . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_' . $collection_ID . '/images/' . $project['thumb'] . '.jpg"></a></li></ul>';
 			}
 			echo '		<h3><a href="' . $proj_url . '" title="' . $key . '">' . $key . '</a></h3><p>' . $project['description'] . '</p><p><a href="' . $proj_url . '" title="' . $key . '" class="btn">View Items</a></p>';
 			echo '	</div>';
-			
-			if ($c == 2){
-				echo '</div><!--end of row-->';
-			}
+
 			$i++;
-			$c++;
-			
+
 		}
 	?>
 		</div>
