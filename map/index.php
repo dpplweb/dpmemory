@@ -93,7 +93,7 @@
                                flat: true,
                                title : key,
                                labelContent: locations[key].length,
-                               labelAnchor: new google.maps.Point(0, 40),
+                               labelAnchor: new google.maps.Point(0, 45),
                                labelClass: "marker-label", // the CSS class for the label
                                labelStyle: {opacity: 0.90},
                                labelInBackground: false
