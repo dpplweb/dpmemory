@@ -27,11 +27,12 @@
 	</div><!--first row-->
 	<?php
 		$collection_ID = 'p15770coll1';
-		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}/field/projec/mode/all/conn/and/order/title/ad/asc';
+		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}!{param}/field/projec!relate/mode/all!all/conn/or!and/order/title/ad/asc';
 		$thumb_url = '/cdm/ref/collection/' . $collection_ID . '/id/{id}';
 		$has_images = True;
 		
 		$projects = array(
+			'Arts and Culture' => array('description' => 'Des Plaines has a rich and vibrant arts culture that reflects the diversity of our community. Find photographs of concerts, dancing, festivals, plays and art exhibits here.', 'param' => 'arts%20and%20culture', 'thumb' => 'arts-culture-thumb', 'item_id' => '1332'),
 			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'item_id' => '243'),
 			'Camp Pine' => array('description' => 'Hans Reinhold and Rudolph Velte were among the German P.O.W.s held at Camp Pine in Des Plaines, Illinois during World War II. These few letters and photographs offer insight into their experiences during their time as Camp Pine inmates through their return to Europe after the war.', 'param' => 'camp%20pine', 'thumb' => 'camp-pine-thumb', 'item_id' => '211'),
 			'City of Destiny' => array('description' => 'A collection focusing on Des Plaines&rsquo; city government and elected officials from its origins as a 19th century village to today&rsquo;s city government.', 'param' => 'city%20of%20destiny', 'thumb' => 'city-of-destiny-thumb', 'item_id' => '1195'),
