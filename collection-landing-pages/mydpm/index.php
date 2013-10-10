@@ -11,7 +11,7 @@
 			<h1>My Des Plaines Memory</h1>
 			<p>There are so many stories to tell about the past. Popular stores that no longer exist. A recreation spot where everyone hung out. Clothing styles that came and went.</p>
 			<p>My Des Plaines Memory collects these stories from you, the people who experienced it, with photographs, postcards, and other materials that you have collected. </p>
-			<p>Start with recent contributions to the collection, or <a href="/cdm/search/collection/p15770coll2">browse</a> through everything.</p>
+			<p>Start with recent contributions to the collection, or <a href="/cdm/search/collection/<?php echo $this->collection ?>">browse</a> through everything.</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
