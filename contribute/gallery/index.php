@@ -1,6 +1,6 @@
 <?php
     //Be sure to change the collection intro variable before cloning this to other collections
-    $collection_intro = 'We want to capture the creativisty and artistry of the people of Des Plaines. Upload images of your creative work to share with the world.'; 
+    $collection_intro = 'Help us record and capture the creative spirit in Des Plaines. Upload images of your creative work to share with the world.'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -173,11 +173,10 @@ if(!empty($this->uploadstatus)){
                                             }
                                         }
                                     ?>
-				                    <option value="not sure">I'm not sure</option>
 				                </select> 
 				            </div>
                             <div class="control-group">
-                                <label>What is the medium you used for this piece?</label>
+                                <label>What is the medium used for this piece?</label>
                                 <input type="text" id="medium" name="medium" value="" class="preview input-xxlarge" placeholder="" />
                             </div>
                             <div class="control-group">
@@ -193,6 +192,10 @@ if(!empty($this->uploadstatus)){
 				                <p class="muted"><b>Tip:</b> Enter as much of the date as you can, starting with the year</p>
 				            </div>
 					        <hr />
+                            <div class="controle-group">
+                                <label>Who created this piece?<i>*</i></label>
+                                <input type="text" id="artist" name="artist" value="" maxlength="128000" class="required preview input-xxlarge" placeholder="" />
+                            </div>
 						    <div class="control-group">
 						        <label>Add a short, descriptive title. <i>*</i></label>
 						        <input type="text" id="FILETITLE" name="title" value="" maxlength="128000" class="required preview input-xxlarge" placeholder="" />
@@ -224,9 +227,12 @@ if(!empty($this->uploadstatus)){
                             </div>
                             <div class="preview-text">
                                 <p>Title: <span id="preview-title"></span></p>
+                                <p>Artist: <span id="preview-artist"></span></p>
                                 <p>Description: <span id="preview-descri"></span></p>
                                 <p>Date: <span id="preview-date"></span></p>
                                 <p>Format: <span id="preview-format"></span></p>
+                                <p>Medium: <span id="preview-medium"></span></p>
+                                <p>Dimensions: <span id="preview-dimens"></span></p>
                             </div>
                        </div>
 				    </div><!--closing div for image row-->
