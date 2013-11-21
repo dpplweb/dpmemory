@@ -17,4 +17,4 @@ You can browse the files in this repo to see how we have done the following cust
 Wiki
 ----
 
-You can find basic documentation about these customizations on the [repo's wiki](wiki/).
+You can find basic documentation about these customizations on the [repo's wiki](https://github.com/dpplweb/dpmemory/wiki).
