@@ -14,3 +14,7 @@ You can browse the files in this repo to see how we have done the following cust
 - Custom contribution forms
 - Custom map of collection items
 
+Wiki
+----
+
+You can find basic documentation about these customizations on the [repo's wiki](wiki/).
