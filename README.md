@@ -1,4 +1,4 @@
-Des Plaine Memory
+Des Plaines Memory
 =================
 
 Des Plaines Memory is an online collection of historical materials collected by the Des Plaines Public Library and the Des Plaines History Center. Des Plaines Memory is built on ContentDM. This repository has files used to customize the site.
