@@ -22,4 +22,4 @@ You can find basic documentation about these customizations on the [repo's wiki]
 Questions
 ---------
 
-Contact Brodie Austin, Web Services Librarian, at [baustin@dppl.org](baustin@dppl.org).
+Contact Brodie Austin, Web Services Librarian, at [baustin@dppl.org](mailto:baustin@dppl.org).
