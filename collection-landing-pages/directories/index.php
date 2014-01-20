@@ -13,8 +13,7 @@
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
-				<p><b>Follow us!</b></p>
-				<p>You can learn more about the Des Plaines Memory project and receive regular updates with one of the following services:</p>
+				<p><b>Stay connected!</b></p>
 				<ul class="unstyled sm-links">
                     <li><a href="http://www.facebook.com/DesPlainesMemory" class="sm-facebook">Facebook</a></li>
 					<li><a href="http://www.twitter.com/DPMemory" class="sm-twitter">Twitter</a></li>
@@ -42,7 +41,7 @@
 		foreach ($projects as $key => $project){
 			
 			if ($i % 3 == 0){
-				echo '<hr /><div class="row">';
+				echo '<div class="row dpm-content-row">';
 				$c = 0;
 			}
 			
