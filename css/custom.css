@@ -2014,8 +2014,7 @@ input[type="button"][disabled] {
 }
 
 .accordion_header {
-	display: none;
-	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	margin: 1px 0 0 0;
@@ -2025,7 +2024,7 @@ input[type="button"][disabled] {
 	list-style: none outside none;
 	outline: 0 none;
 	cursor: pointer;
-	text-decoration: none;*/
+	text-decoration: none;
 }
 
 .accordion_header_open a:link, .accordion_header_open a:visited, .accordion_header_open a:hover, .accordion_header_open a:active { color: #212121; }
@@ -3038,6 +3037,8 @@ div.results_tn_icon_favs_link {
 	border-bottom: 1px solid #ddd;
 	overflow: hidden;
 }
+
+#details_accordion .accordion_header{display: none !important;}
 
 #details_accordion>h3.accordion_header_active {
 	font-size: 13px;
