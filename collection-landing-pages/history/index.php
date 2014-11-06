@@ -29,7 +29,7 @@
 		$base_url = '/cdm/search/collection/' . $collection_ID . '/searchterm/{param}!{param}/field/projec!relate/mode/all!all/conn/or!and/order/title/ad/asc';
 		$thumb_url = '/cdm/ref/collection/' . $collection_ID . '/id/{id}';
 		$has_images = True;
-		
+
 		$projects = array(
 			'Arts and Culture' => array('description' => 'Des Plaines has a rich and vibrant arts culture that reflects the diversity of our community. Find photographs of concerts, dancing, festivals, plays and art exhibits here.', 'param' => 'arts%20and%20culture', 'thumb' => 'arts-culture-thumb', 'item_id' => '1332'),
 			'Brown\'s Department Store' => array('description' => 'Brown&rsquo;s Department Store&mdash;originally known as the Des Plaines Department Store&mdash;was located on Miner Street in downtown Des Plaines, Illinois. These photographs of the store span the years 1916 through 1958.', 'param' => 'browns%20department%20store', 'thumb' => 'browns-thumb', 'item_id' => '243'),
@@ -46,32 +46,23 @@
 			);
 		/*base values for loop*/
 		/*we don't start i at 0 so that modulo will calcuate the end of rows correctly*/
-		$i = 1;
+		$i = 0;
 		/*these could be changed to make rows shorter or longer*/
-		$features = 3;
-		$row_length = 3;
+		$row_length = 4;
 		$span = 'span4';
 
 		echo'<hr /><div class="row dpm-content-row">';
-		
+
 		foreach ($projects as $key => $project){
 
-			if ($i == $features){
-				$row_length = 4;
-			}
-
-			if ($i > $features){
-				$span = 'span3';
-			}
-
-			if ($i % $row_length  == 0){
+			if ($i % $row_length  == 0 && $i <> 0){
 				echo '</div><!--end of row-->';
 				echo'<div class="row dpm-content-row">';
 			}
- 
+
 			$proj_url = str_replace('{param}', $project['param'], $base_url);
 			$item_url = str_replace('{id}', $project['item_id'], $thumb_url);
-			
+
 			echo '	<div class="' . $span . '">';
 			if ($has_images == True){
 				echo '		<ul class="thumbnails"><li><a href="' . $proj_url . '" class="thumbnail"><img src="/ui/custom/default/collection/coll_' . $collection_ID . '/resources/custompages/landing/' . $project['thumb'] . '.jpg"></a></li></ul>';
