@@ -77,15 +77,15 @@ if(!empty($this->uploadstatus)){
             <ul>
                 <li>Submit scanned and digital photos at 150 ppi to 300 ppi resolution.</li>
                 <li>File types .jpg, .png, and .tif are accepted.</li> 
-                <li>Do not include spaces or special characters (&, #, !, ?, etc.) in filenames.</li>
+                <li>Do not include spaces or special characters (&, #, !, ?, etc.) in file names.</li>
             </ul>
         </div>
         <div class="span4">
             <h2><i class="overview-icon overview-warning"></i>We won't accept</h2>
             <ul>
-                <li>Inflammatory, obscene, offense, or libelous material</li>
+                <li>Inflammatory, obscene, offensive, or libelous material</li>
                 <li>Internet links in your content</li>
-                <li>Promotion of product or service</li>
+                <li>Promotion of products or services</li>
                 <li>Violations of individuals' privacy</li>
                 <li>Personal identifying information</li>
              </ul>
@@ -94,7 +94,7 @@ if(!empty($this->uploadstatus)){
             <h2><i class="overview-icon overview-cc"></i>Creative Commons</h2>
             <div class="row">
                 <div class="span8">
-                    <p>Anything you upload to <?php echo $this->collectionNames[$this->collection] ?> will be covered by a Creative Commons license. This means that you agree to share your work as long as it is attributed to you, not used for commercial purposes, and future resues have to use the same license.</p>
+                    <p>Anything you upload to <?php echo $this->collectionNames[$this->collection] ?> will be covered by a Creative Commons license. This means that you agree to share your work as long as it is attributed to you, not used for commercial purposes, and future reuse have to use the same license.</p>
                     <p><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Review the Creative Commons license</a></p>
                 </div>
                 <div class="span4">
@@ -127,16 +127,16 @@ if(!empty($this->uploadstatus)){
                         <li>Includes links to Internet sites.</li>
                         <li>Promotes products or services.</li>
                         <li>Violates the privacy of individuals.</li>
-                        <li>Include any personal identifying information such as Social Security numbers, phone numbers, email addresses or street addresses.</li>
+                        <li>Includes any personal identifying information such as Social Security numbers, phone numbers, email addresses or street addresses.</li>
                     </ul>
-                    <p>By publishing content on <?php echo $this->SITE_CONFIG_title ?>, you agree to the following:</p>
+                    <p>By publishing content on <?php echo $this->collectionNames[$this->collection] ?>, you agree to the following:</p>
                     <ul>
                         <li>User grants permission to the Des Plaines Public Library and the Des Plaines History Center to reproduce and distribute the submitted material for non-commercial use.</li>
-                        <li>The Des Plaines Public Library reserves the right to edit, delete or reject submissions to <?php echo $this->SITE_CONFIG_title ?>.</li>
+                        <li>The Des Plaines Public Library reserves the right to edit, delete or reject submissions to <?php echo $this->collectionNames[$this->collection] ?>.</li>
                         <li>User is the lawful copyright or intellectual property right holder of the material submitted.</li>
                         <li>Material submitted will be attributed to user.</li>
                         <li>Photographs found to be in violation of copyright will be deleted immediately.</li>
-                        <li>User may not charge the Des Plaines Public Library any fees or royalties for material submitted to or published on <?php echo $this->SITE_CONFIG_title ?>.</li>
+                        <li>User may not charge the Des Plaines Public Library any fees or royalties for material submitted to or published on <?php echo $this->collectionNames[$this->collection] ?>.</li>
                         <li>The Des Plaines Public Library will remove any materials upon request of the user.</li>
                     </ul>
                 </div><!--closing div for terms-->
@@ -223,7 +223,7 @@ if(!empty($this->uploadstatus)){
 	    <div class="modal">
 		    <div class="modal-body">
 		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		        <p>Thank you for considering uploading your content to My <?php echo $this->SITE_CONFIG_title ?>. If you change your mind about our terms and conditions, please feel free to visit us again.</p>
+		        <p>Thank you for considering uploading your content to <?php echo $this->collectionNames[$this->collection] ?>. If you change your mind about our terms and conditions, please feel free to visit us again.</p>
 		    </div>
 		</div>
 	</div><!--closing div for disagreement row-->

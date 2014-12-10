@@ -1,0 +1,12 @@
+		<div class="row dpm-row">
+			<div class="span4">
+				<ul class="thumbnails">
+					<li><a href="/cdm/landingpage/collection/p15770coll6" class="thumbnail"><img src="/ui/custom/default/collection/default/resources/custompages/home/dpm-gallery.jpg" /></a></li>
+				</ul>
+				<h2><a href="/cdm/landingpage/collection/p15770coll6">The Gallery</a></h2>
+				<p>The Gallery on Des Plaines Memory is a great place for local artists to display their work online. Des Plaines artists can upload pictures of their artwork by filling out a simple form. Start <a href="/cdm/contribute/collection/p15770coll6">contributing</a> now!</p>
+				<p>
+					<a class="btn" href="/cdm/landingpage/collection/p15770coll6">View Collection</a>
+				</p>
+			</div>
+			</div>
