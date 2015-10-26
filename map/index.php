@@ -34,31 +34,31 @@
     <script>
         $(document).ready(function(){
             $('.load').show();
-            
+
             var mapOptions = {
               center: new google.maps.LatLng(42.03723,-87.885586),
               zoom: 14,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            
+
             var map = new google.maps.Map(document.getElementById("map-canvas"),
                 mapOptions);
-                
+
             var locations = new Array();
             var records;
-            
+
             //patterns for detetcting lat lng
             var p = /-*[0-9]{2}\.[0-9]+,/;
             var lat, lng;
-                
-                
-            $.getJSON('/ui/custom/default/collection/default/resources/custompages/map/data.php', {p : 'p15770coll1!p15770coll2'}, function(data){
+
+
+            $.getJSON('/ui/custom/default/collection/default/resources/custompages/map/data.php', {p : 'p15770coll1'}, function(data){
 //            $.getJSON('items.json', function(data){
                 records = data;
                 $.each(records, function(i, record){
                     if (record.locati.length > 0){
                         var loc = record.locati;
-                                                             
+
                         if (locations[loc]){
                             locations[loc].push({"id" : record.pointer, "title" : record.title, "collection" : record.collection});
                         }
@@ -66,10 +66,10 @@
                             locations[loc] = [{"id" : record.pointer, "title" : record.title, "collection" : record.collection}];
                         }
                     }
-                    
+
                 });
-                
-                
+
+
                 for (var key in locations){
                     if (p.test(key) == false){
                             /*geocoder = new google.maps.Geocoder();
@@ -98,44 +98,44 @@
                                labelStyle: {opacity: 0.90},
                                labelInBackground: false
                              });
-                             
+
                              showItems(marker, records);
-	                   } 
+	                   }
                 }
-                
+
                 $('.load').hide();
-                
+
             });
-            
+
             function showItems(marker){
                 google.maps.event.addListener(marker, 'click', function() {
                     var list, img, key;
-                    
+
                     key = marker.getTitle();
-                    
+
                     $('#results-list ul').hide();
-                    
+
                     //console.log($('#' + key).length);
-                    
+
                     if ($('#' + key).length != 0){
                         $('#' + key).show();
                     }
                     else{
                         list = '<ul id="' + key + '">';
-                        
+
                         $.each(locations[key], function(i){
-                            console.log(locations[key][i]);  
+                            console.log(locations[key][i]);
                             img = '<li><a href="http://www.desplainesmemory.org/cdm/ref/collection' + locations[key][i]['collection'] + '/id/' + locations[key][i]['id'] + '" class="item-image" target="_blank"><img src="http://www.desplainesmemory.org/utils/getthumbnail/collection' + locations[key][i]['collection'] + '/id/' + locations[key][i]['id'] + '"><span class="item-title">' + locations[key][i]['title'] + '</span></a></li>';
                             list+= img;
                         });
-                        
+
                         $('#results-list').append(list).show();
                     }
                     $('#results-count').html('(' + locations[key].length + (locations[key].length == 1?' item':' items') + ')');
                 });
-                
+
             }
-            
+
         });
     </script>
 </body>
