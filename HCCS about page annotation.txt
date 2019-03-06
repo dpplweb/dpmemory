@@ -1,0 +1,13 @@
+
+
+
+<div class="row" style="margin: 20px 0 20px -20px;">
+					<div class="span2">
+						<a href="http://www.desplainesmemory.org/cdm/search/collection/p15770coll1/searchterm/History%20Center%20Cross%20Section/field/all/mode/exact/conn/and/order/title" class="thumbnail">
+<img src="/ui/custom/default/collection/default/resources/custompages/about/history-center-cross-section-thumb.jpg" /></a>
+					</div>
+					<div class="span6">
+						<h4>History Center Cross Section</h4>
+						<p>During 2016 and 2017, the <a href="http://www.desplaineshistory.org/">Des Plaines History Center</a> digitized its holdings of historic photos using grant funds from the <a href="https://cyberdriveillinois.com/departments/archives/ISHRAB/home.html">Illinois State Historical Records Advisory Board</a>. Many of these scanned images are or will be available to view on Des Plaines Memory in the History Center Cross Section and other projects.</p>
+					</div>
+				</div>

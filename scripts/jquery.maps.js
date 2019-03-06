@@ -3,7 +3,7 @@ $(function(){
     if($('#metadata_locati').length != 0 || $('#metadata_object_locati').length != 0){
         var script = document.createElement("script");
         script.type = "text/javascript";
-        script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyABEmDoSNEXi5uaPHLUeUU9AcGqhJbD5gw&sensor=false&callback=initialize_map";
+        script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyCMUrxKwQNTUEmuzhfPiTgcZ44nGwBJRWo&callback=initialize_map";
         document.body.appendChild(script);
         
         var map_div = '<!--inserted h3 and div for map--><h3 id="details_accordion_map" class="accordion_header role="tab" aria-expanded="true">Map</h3><div class="accordion_window" role="tabpanel"><div id="map_canvas" style="width: 100%; height: 200px;"></div></div>';

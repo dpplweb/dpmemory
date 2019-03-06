@@ -8,10 +8,9 @@
 <div class="container">
 	<div class="row">
 		<div class="span8">
-			<h1>My Des Plaines Memory</h1>
-			<h2>UNDER CONSTRUCTION!</h2>
-			<p>We're in the process of integrating the My Des Plaines Memory collection with our main collection, Des Plaines Memory. You might notice that some of your previous contributions have disappeared temporarily while we move things around.</p>
-			<p><em><b>In the meantime, you can still upload your photos as usual, so start contributing right now!</b></em></p>
+			<h1>The Gallery</h1>
+			<p>Whether you paint or make collages, your work reflects the time and place in which it was created. Looking back we learn about an era through the creative works it generated. The Gallery is an online space to exhibit and save the creative sprit in Des Plaines.</p>
+			<p>Start with recent contributions to the collection, or <a href="/cdm/search/collection/<?php echo $this->collection ?>">browse</a> through everything.</p>
 		</div>
 		<div class="span4">
 			<div class="well sidebar-nav" style="background-color: #F9F9F9;">
@@ -29,9 +28,9 @@
 	<div class="row">
 	    <div class="span6">
 	        <h2>Contribute</h2>
-	        <p>Do you have historical photographs, postcards, or other visual material that reveals something interesting, unexpected, or important about Des Plaines' past?</p>
-	        <p>Upload your materials to Des Plaines Memory and help tell the story of Des Plaines.</p>
-	        <p><a href="/cdm/contribute/collection/p15770coll1" class="btn btn-large btn-success">Contribute now</a></p>
+	        <p>Do you have visual artwork that you want to share? We collect a variety of artistic creations from Des Plaines residents.</p>
+	        <p>Upload your materials to the Gallery and leave a trace of the creative spirit in Des Plaines.</p>
+	        <p><a href="/cdm/contribute/collection/<?php echo $this->collection; ?>" class="btn btn-large btn-success">Contribute now</a></p>
 	    </div>
 	    <div class="span6">
 	        <h3>Recent contributions</h3>

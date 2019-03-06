@@ -1,7 +1,7 @@
 <?php
     //Be sure to change the collection intro variable before cloning this to other collections
 
-    $collection_intro = 'We&rsquo;re looking for photographs that depict important people, institutions or events of historical significance to Des Plaines. If you have any interesting historical photographs, you can upload them and share your connection to our local history.';
+    $collection_intro = 'Here at Des Plaines Memory, we believe that history begins with your history! We&rsquo;re looking for photographs that depict the people, businesses, institutions, and events of historical significance to Des Plaines. Please share your personal Des Plaines history to our growing archives of local history! Just upload your photographs and fill out the form below.';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,14 +46,13 @@ if(!empty($this->uploadstatus)){
 <div class="container">
     <div class="row">
         <div class="span8">
-            <h1>Contribute</h1>
+            <h1>Upload & Share</h1>
             <p>Thank you for your interest in contributing to <?php echo $this->collectionNames[$this->collection] ;?>!</p>
             <p><?php echo $collection_intro; ?></p>
         </div>
         <div class="span4">
             <div class="well sidebar-nav" style="background-color: #F9F9F9;">
-                <p><b>Follow us!</b></p>
-                <p>You can learn more about the Des Plaines Memory project and receive regular updates with one of the following services:</p>
+                
                 <ul class="unstyled sm-links">
                     <li><a href="http://www.twitter.com/DPMemory" class="sm-twitter">Twitter</a></li>
                     <li><a href="http://desplainesmemory.tumblr.com/" class="sm-tumblr">Tumblr</a></li>
@@ -75,7 +74,7 @@ if(!empty($this->uploadstatus)){
         <div class="span4">
             <h2><i class="overview-icon overview-uploads"></i>Uploads</h2>
             <ul>
-                <li>Submit scanned and digital photos at 150 ppi to 300 ppi resolution.</li>
+                <li>Submit scanned and digital photos (we suggest 300 or more ppi resolution).</li>
                 <li>File types .jpg, .png, and .tif are accepted.</li> 
                 <li>Do not include spaces or special characters (&, #, !, ?, etc.) in file names.</li>
             </ul>
@@ -153,7 +152,7 @@ if(!empty($this->uploadstatus)){
 		    <h2>Upload and Describe</h2>
 			<form enctype="multipart/form-data" id="cdmWebAddForm" method="POST" action="/utils/webadd/collection/<?php echo $this->collection;?>">
 				    <input type="hidden" name="webaddurl" value="<?php echo $this->cdmCustomPage; ?>" />
-                    <input type="hidden" name="rights" value="This material may be protected by U.S. Copyright Law (Title 17 U.S. Code) and is intended solely for personal or educational use. Any commercial use without permission is prohibited." />
+                    <input type="hidden" name="rights" value="This material may be protected by U.S. Copyright Law (Title 17 U.S. Code) and is intended solely for personal or educational use. Any commercial use without permission is prohibited. Creative Commons (CC BY-ND-NC 1.0) license http://creativecommons.org/licenses/by-nd-nc/1.0/" />
 				    <div class="row">
 	                    <div class="span7" >
 	                        <div class="control-group">
@@ -166,7 +165,7 @@ if(!empty($this->uploadstatus)){
 				                    <option value=""></option>
 				                    <option value="black and white photograph">Black & White Photograph</option>
 				                    <option value="color photograph">Color Photograph</option>
-				                    <option value="not sure">I'm not sure</option>
+				                   
 				                </select> 
 				            </div>
 				            <div class="control-group">
@@ -175,7 +174,7 @@ if(!empty($this->uploadstatus)){
 				                <input type="text" id="date-month" class="date-input input-mini" placeholder="Month" />
 				                <input type="text" id="date-day" class="date-input input-mini" placeholder="Day" />
 				                <input type="text" name="date" id="date" class="no-border " value="0000-00-00" />
-				                <p class="muted"><b>Tip:</b> Enter as much of the date as you can, starting with the year</p>
+				                <p class="muted"><b>Tip:</b> Enter as much of the date as you know. Leave blank any part of the date you don't know.</p>
 				            </div>
 					        <hr />
 						    <div class="control-group">

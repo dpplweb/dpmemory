@@ -1,0 +1,11 @@
+<div class="span4">
+				<ul class="thumbnails">
+					<li><a href="http://www.desplainesmemory.org/cdm/search/collection/p15770coll1/searchterm/History%20Center%20Cross%20Section/field/all/mode/exact/conn/and/order/title" class="thumbnail"><img src="/ui/custom/default/collection/default/resources/custompages/home/history-center-cross-section-thumb.jpg" /></a></li>
+				</ul>
+				<h2><a href="http://www.desplainesmemory.org/cdm/search/collection/p15770coll1/searchterm/History%20Center%20Cross%20Section/field/all/mode/exact/conn/and/order/title">History Center Cross Section</a></h2>
+				<p>The <a href="http://www.desplaineshistory.org/collections/research">Des Plaines History Center</a> holds over twelve thousand photographs that document the history of Des Plaines, IL. All of these have been digitized for use in research, exhibits, and programs. This Cross Section gives a sense of the wide-ranging subjects contained in the collection. Contact the <a href="http://www.desplaineshistory.org/collections/research">History Center</a> to conduct research on any specific topic.</p>
+				<p>
+					<a class="btn" href="http://www.desplainesmemory.org/cdm/search/collection/p15770coll1/searchterm/History%20Center%20Cross%20Section/field/all/mode/exact/conn/and/order/title">View Items</a>
+				</p>
+			</div>
+

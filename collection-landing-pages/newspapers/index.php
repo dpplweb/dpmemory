@@ -31,8 +31,8 @@
 		
 		$projects = array(
 			'Des Plaines Suburban Times' => array('description' => 'You will find issues for the Des Plaines Suburban Times for following year(s): 1939&ndash;1941, 1944&ndash;1945, 1947&ndash;1952, 1954, 1957&ndash;1970', 'param' => 'des%20plaines%20suburban%20times', 'thumb' => 'dp-suburban-times-thumb', 'item_id' => '68'),
-			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2003&ndash;2012. Current year added continuously.', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
-			'Edison Norwood Review' => array('description' => 'You will find issues for the Edison Norwood Review for the following year(s): 1952 (October, November and December only)', 'param' => 'edison%20norwood%20review', 'thumb' => 'en-review-thumb', 'item_id' => '3229'),
+			'Des Plaines Journal' => array('description' => 'You will find issues for the Des Plaines Journal for the following year(s): 2000&ndash;2018. The most recent issues may be accessed <a href="http://www.desplainesmemory.org/cdm/search/collection/p15770coll3/searchterm/des%20plaines%20journal/field/projec/mode/all/conn/and/order/date!reverse">here</a>.Current year added continuously every three to five days.', 'param' => 'des%20plaines%20journal', 'thumb' => 'dp-journal-thumb', 'item_id' => '3539'),
+			
 			);
 		$i = 0;
 		$c = 0;
