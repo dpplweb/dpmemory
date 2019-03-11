@@ -1,0 +1,772 @@
+ @import url("https://use.typekit.net/mvs7qfk.css");
+.grid {
+	margin: 30px auto;
+}
+
+.grid figure {
+	display: block;
+	float: left;
+	margin: 0 1% 10px 1%;
+	cursor: pointer;
+	overflow: hidden;
+    position: relative;
+}
+
+.grid figure img {
+	display: block;
+    
+}
+
+.grid figure figcaption {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 400;
+	left: auto;
+	width: 100%;
+	height: 60px;
+	bottom: -60px; 
+	padding: 20px;
+    padding-top: 10px;
+	color: #ddd;
+	background: #004B60;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: bottom 0.2s ease;
+	-moz-transition: bottom 0.2s ease-in-out;
+	-ms-transition: bottom 0.2s ease-in-out;
+	-o-transition: bottom 0.2s ease-in-out;
+	transition: bottom 0.2s ease-in-out;
+}
+
+.grid figure figcaption a {
+	color: #fff;
+}
+
+.grid figure figcaption a:hover {
+	color: #ffd468;
+}
+
+.grid figure:hover figcaption {
+	bottom: 0px;
+}
+
+/* 'Demo' Style from codrops
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);  */
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font-family: futura-pt, brandon-grotesque, sans-serif;
+    background: #ffe19a url(../images/noisebg.png);
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.main,
+.container > header {
+	width: 90%;
+	max-width: 835px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 0 5px 0px
+}
+
+.container > header {
+	padding: 30px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.container > header h1 {
+	font-size: 28px;
+	line-height: 38px;
+	margin: 0;
+	font-weight: 700;
+	color: #555;
+	float: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+
+.container > header h1 span {
+	display: block;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.container > header p {
+	float: right;
+	padding: 50px 0 0 0;
+	color: #b9953e;
+	font-weight: 300;
+	text-shadow: 0 1px rgba(255,255,255,0.6);
+}
+
+/* Header Style */
+.codrops-top {
+	line-height: 24px;
+	font-size: 11px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+.codrops-top a {
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #000;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	float: right;
+	padding-top: 10px;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 10px;
+    color: #666;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 4px solid transparent;
+}
+
+.codrops-demos a:hover {
+	color: #000;
+	border-color: #000;
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	color: #aaa;
+	border-color: #aaa;
+}
+
+.support-note {
+	clear: both;
+}
+
+.support-note span{
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+
+
+
+/*BEGIN Header/Footer style
+*/
+
+
+a:link {
+      transition: color .4s ease!important;
+}
+
+#htmlheader {
+	margin-bottom: 20px;
+  
+}
+   #A_35 {
+    font: normal normal bold normal 18px / 24.3px futura-pt, sans-serif;
+    list-style: none outside none;
+    outline: rgb(112, 105, 100) none 0px;
+    padding: 3px 13px;
+	}
+
+#footer{
+	margin-bottom: 0;
+}
+#footer a:hover {
+	color: #ffffff;
+}
+
+#default_footer {
+  display:none;
+}
+
+/*******************FIXED WIDTH*******************/
+.content, div#body{
+	max-width: 1300px;
+  	padding-right:40px;
+  	padding-left:40px;
+} 
+
+
+
+/*******************BUTTONS******************/
+.button {
+    text-shadow: 0px 1px #817a74;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #48b7b2;
+    padding: 8px 18px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.24);
+    color: #fff;
+}
+  /*event page title*/
+#idaiMWo h2 {
+    font-size: 2.4em;;
+	font-weight: 600;
+}
+
+  /*event page sub title*/
+#idaiMWo h3 {
+	color: #616167;
+    font-size: 1.2em;;
+	font-weight: 200;
+}
+/*extra space for calendar and location icons*/
+#idm0vRo, #idV05ku {
+padding-left: 10px;
+}
+
+/*border above and below the date, time and location info*/
+#id4VX3g .amh-row, #idlw5ZC.amh-row.row {
+border-top: 1px solid #d0d0d0;
+padding: 8px 0;
+}
+
+/*event page short description*/
+#idjLXfv .custom1 {
+	color: #616161;
+	margin: 1em 0;
+	font-weight: 300;
+    font-size: 1.4em;
+}
+  
+#idsqaCW h4 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  font-weight: 300;
+}
+
+.eelisttitle, .eelisttitle a, .eelisttitle a:hover {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+  text-decoration: none;
+}
+
+.eventRegButton, .eventRegButton:hover {
+    margin: 0.5em 0 0.5em 0;
+    display: block;
+}
+
+.events-date-bar .headingtext{
+    color: #555555;
+  font-size: 1em;
+  	margin-bottom: 1em;
+    font-weight: 400;
+    padding: 10px 0;
+}
+/* next chevrons */
+.events-change-prev, .events-change-next {
+    color: #a6dded;
+}
+
+/************ upcoming Events widget ***************/
+
+
+/*height of events listing widget*/
+#idtvR3F .amev-event-list{
+	height: 520px;
+}
+
+/*register button in widget*/
+#idtvR3F .eventRegButton{
+  display:block;
+  width: 60%;
+  margin: 10px auto 5px auto;
+}
+
+/*event listing title upcoming events widget*/
+.amev-event-title {
+    font-size: 1.1em;
+  line-height:1.3;
+}
+
+.amev-event-title a {
+  text-decoration: none;
+}
+
+
+/*date string in upcoming events widget*/
+#idtvR3F .amev-event-list .amev-event .amev-event-data .amev-event-time .headingtext {
+	color: #000000!important;
+}
+
+/*headings for branch location info*/
+#idn2Wy5 .headingtext {
+font-size: 1.2em;
+  font-weight: 700;
+}
+
+
+
+/*filters*/
+@media (max-width: 768px){
+.events-filter-row {
+    max-width: 768px;
+    text-align: center;
+  }
+}
+
+
+/******************* SUPPLIED HEADER AND FOOTER CSS *******************/
+
+@media only screen and (min-width: 992px) { #DIV_1 {
+  	display:none;
+  }
+  }
+
+@charset "UTF-8";
+#A_1 {
+  background-position: 0px 0px;
+  box-sizing: border-box;
+  color: #42a8a4;
+  display: block;
+  height: 68px;
+  float: left;
+  margin-top: 25px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 216px;
+  column-rule-color: #42a8a4;
+  perspective-origin: 108px 32.5px;
+  transform-origin: 108px 32.5px;
+  background: transparent url("https://dppl.org/assets/images/logo.png") no-repeat scroll 0px 0px/auto padding-box border-box;
+  border: 0px none #42a8a4;
+  font: normal normal normal normal 18px / 65px brandon-grotesque, "Brandon Grotesque", futura-pt, sans-serif;
+  outline: #42a8a4 none 0px;
+  overflow: hidden;
+}
+
+/*#A_1*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+html, body.embeded{
+  line-height: 1;
+  height: 100% !important;
+}
+
+#channel, .channel, div.stage {
+    height: 100% !important;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+a.nav-older, a.nav-newer, .dppl-form input[type=submit] {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #83cfe1;
+  padding: 7px 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+a.nav-older:hover, a.nav-newer:hover, .dppl-form input[type=submit]:hover {
+  text-decoration: none;
+  background-color: #97d7e6;
+  cursor: pointer;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: white;
+  position: relative;
+  color: #504b47;
+  font-family:"brandon-grotesque", "Brandon Grotesque", "futura-pt", sans-serif!important;
+  font-size:  18px;
+  line-height: 1.35;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+p, ul, ol {
+  margin-bottom: 11px;
+}
+
+blockquote {
+  border-left: 4px solid #efeeed;
+  margin-left: 30px;
+  padding-left: 10px;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+a {
+  color: #42a8a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  color: #348380;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-family: "futura-pt", "Futura Std", "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  margin-bottom: 7px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "futura-pt", "Futura Std", "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  margin: 1.5em 0 .5em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  margin: 1.5em 0 .5em;
+}
+
+aside h3.note {
+  font-weight: 400;
+}
+
+h3.bolder {
+  font-size: 16px;
+  font-family: "futura-pt", "Futura Std", "brandon-grotesque", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.group:after, .more-drop nav:after, .sub-features:after, .nav-collapse:after, .main:after, .content-rows:after, .content-rows .row:after, .calendar .cal-parent:after, .pagination:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hide-text, .branding .site-title a, .tax-forms-page .taxforms .status {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.obscure {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.arrow:after {
+  content: "?";
+  padding-left: 5px;
+  font-size: .8em;
+}
+
+.banner em {
+  display: block;
+  font-style: normal;
+  background: #aa8f9e;
+  color: white;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.banner a {
+  color: #EBE5E9;
+  text-decoration: underline;
+}
+
+.container-wrap {
+  width: 100%;
+  text-align: left;
+}
+
+.container, footer {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.note {
+  font-size: 16px;
+}
+
+.brow {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+a.button {
+  text-shadow: 0px 1px #817a74;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  background-color: #48b7b2;
+  padding: 6px 8px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.24);
+  color: #fff;
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+.masthead {
+  border-top: 5px solid #ede8e6;
+  border-bottom: 37px solid #69635e;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+.branding {
+  height: 96px;
+}
+
+.branding h1 {
+  margin: 0;
+}
+
+.branding .site-title {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 0;
+}
+
+.branding .site-title a {
+  width: 72px;
+  height: 68px;
+  line-height: 68px;
+  background: url(/assets/images/logo-mobile.png) no-repeat 0 0;
+  z-index: 999;
+  display: block;
+}
+
+.mobile-supernav {
+  float: right;
+  background-color: #ede8e6;
+  margin-top: -5px;
+  border-radius: 0 0 3px 3px;
+}
+
+.mobile-supernav ul li {
+  float: left;
+  background-color: #e2dad7;
+  display: none;
+}
+
+.mobile-supernav ul li a {
+  display: block;
+  background-color: #ede8e6;
+  font-family: "depot-new-condensed-web", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7px 8px 4px;
+}
+
+
+.mobile-supernav .super-account, .mobile-supernav .super-catalog, .mobile-nav .super-search {
+  display: inline-block;
+}
+
+.mobile-supernav .super-account, mobile-supernav .super-search {
+  padding-right: 1px;
+  border-right: 1px solid #f8f6f5;
+}
+
+.mobile-supernav .active a {
+  border-bottom: 2px solid #504b47;
+  color: black;
+}
+
+nav a {
+  outline: none;
+}
+
+.main-nav {
+  padding-top: 103px;
+  margin: 0;
+  font-size: 0;
+}
+
+.main-nav > li {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.main-nav > li.mobile-hide {
+  display: none;
+}
+
+.main-nav > li:first-child {
+  margin-left: 0;
+}
+
+.main-nav > li > a {
+  font-family: "depot-new-condensed-web", sans-serif;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* END header/footer style
+
+*/
+

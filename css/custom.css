@@ -5,10 +5,15 @@
 This is a customized, skinned version of the default ContentDM ver 5 stylesheet. Changes have primarily focused on the navigation and search bar. A few UI elements from the Twitter Bootstrap (http://twitter.github.com/bootstrap/) have been appended here as well
 -Brodie Austin, Web Services Librarian, DPPL, 2012, baustin@dppl.org
 
+Next set of changes for a rebranding and styling.
+
+-Tony Hahn, Web Services Manager, DPPL, 2019, ahahn@dppl.org
+
 */
 /* CSS Document */
 
 /* -----------------------  Default Styles  ------------------------------ */
+ @import url("https://use.typekit.net/mvs7qfk.css");
 
 .ui-swidget-overlay {
 	position: absolute;
@@ -388,13 +393,14 @@ html body span.clear {
 #nav_top {
 	height: 32px; 
 	width: 100%;
-	margin-left: -1px;
-	background-color: #333; 
-	border: 1px solid #333 !important;
+	margin-left: 0px;
+	background-color: #ffffff; 
+	border: 0px solid #ffffff !important;
 	border-width: 1px;
 	overflow: hidden;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: futura-pt, sans-serif;
 	font-size: 13px;
+    text-transform: uppercase;
 }
 
 #nav_top a{font-size: 13px;}
@@ -403,7 +409,7 @@ html body span.clear {
 #nav_top a:hover{
 	color: #63af00 !important;
 	text-decoration: none !important;
-	background-color: #333 !important;
+	background-color: #ffffff !important;
 }
 
 #nav_top .cdmHelpLink{float: left;}
@@ -417,11 +423,12 @@ html body span.clear {
 	height: 34px;
 	width: 100%;
 	padding-top: 4px;
-	background-color: #333;
+	background-color: #ffffff;
 	border: 0;
 	border-width: 1px 0 1px 0;
 	margin: 18px 0 0 0;
 	overflow: hidden;
+	text-transform:uppercase;
 }
 
 #nav_top_left, #nav_footer_left { float: left; margin-left: 5px;}
@@ -467,20 +474,22 @@ html body span.clear {
 #nav_top_left>ul.nav li, #nav_top_right>ul.nav li, #nav_footer_left>ul.nav li, #nav_footer_right>ul.nav li {
 	display: inline;
 	float: left;
+	font-family: futura-pt, sans-serif;
 }
 
 #nav_top_left>ul.nav li a, #nav_top_left_spacer {
 	height: 26px;
-	background-color: #333;
+	background-color: #ffffff;
 	letter-spacing: 0.3px;
 	float: left;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: futura-pt, sans-serif;
 	font-size: 13px;
 }
 
 #nav_top_left>ul.nav li a {
 	font-weight: normal;
-	color: #999;
+	font-family: futura-pt, sans-serif;
+	color: #42a8a4;
 	padding: 5px 15px 0 15px;
 	padding-left: 15px !important;
 	border-right: 0;
@@ -492,15 +501,15 @@ html body span.clear {
 #nav_top_left>ul.nav li a #nav_top_left_first_link { padding-left: 30px; }
 #nav_footer_left>ul.nav li a { }
 #nav_top_right>ul.nav li a { color: #999;}
-a#login_link, a#logout_link{color: #999 !important;}
+a#login_link, a#logout_link{color: #999;display:none;}
 
 #nav_footer_left>ul.nav li a, #nav_footer_right>ul.nav li a {
 	height: 30px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: futura-pt, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
-	color: #999;
-	background-color: #333;
+	color: #42a8a4;
+	background-color: #ffffff;
 	border-right: 0;
 	letter-spacing: 0.3px;
 	padding: 8px 20px 0 20px;
@@ -550,17 +559,17 @@ a#login_link, a#logout_link{color: #999 !important;}
 .nav > li > a{display: block;}
 
 .nav_li_right_1 {
-	color: #999;
-	background-color: #333;
+	color: #42a8a4;
+	background-color: #ffffff;
 	font-size: 13px;
-    padding-left: 30px;
+	padding-left: 30px;
 }
 
-.nav_li_right_1a { color: #999; }
+.nav_li_right_1a { color: #42a8a4; }
 
 .nav_li_right_1b {
 	font-weight: bold;
-	color: #999;
+	color: #42a8a4;
 }
 
 .nav_footer_left_divider, .nav_footer_right_divider {
