@@ -200,11 +200,11 @@ a:hover {
 }
 
 #metadata_compan a, #metadata_contri a, #metadata_format a, #metadata_object_contri a, #metadata_object_format a, #metadata_object_named a, #metadata_object_projec a, #metadata_object_subjec a, #metadata_projec a, #metadata_relate a, #metadata_subjec a{
-  color: #63af00 !important;
+  color: #42a8a4 !important;
 }
 
 #details .body_link_11:hover{
-  color: #63af00;
+  color: #69635e;
 }
 
 .results_tn_collection_box .body_link_11{
@@ -216,7 +216,7 @@ a:hover {
 }
 
 .cdm_accordion .body_link_11{
-  color: #63af00 !important;
+  color: #69635e !important;
 }
 
 .cdm_accordion .body_link_11:hover{
@@ -224,7 +224,7 @@ a:hover {
 }
 
 .cdm_accordion .body_link_11:visited{
-  color: #63af00;
+  color: #69635e;
 }
 
 
