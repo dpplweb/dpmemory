@@ -91,7 +91,7 @@ html { }
 
 body {
 	margin: 0 auto;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
     font-size: 13px;
 	color: #333;
 	width: 978px;
@@ -123,7 +123,7 @@ a:hover {
 /* directional copy #525252 */
 
 .body_text_10 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
     font-size: 13px;
 	color: #333;
 	font-weight: normal;
@@ -132,7 +132,7 @@ a:hover {
 }
 
 .body_text_11 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
   font-size: 13px;
 	color: #333;
 	font-weight: normal;
@@ -141,7 +141,7 @@ a:hover {
 }
 
 .action_link_10 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #42a8a4;
@@ -162,7 +162,7 @@ a:hover {
 }
 
 .action_link_11 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #42a8a4;
@@ -171,7 +171,7 @@ a:hover {
 }
 
 .body_link_10 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #42a8a4;
@@ -180,7 +180,7 @@ a:hover {
 }
 
 .body_link_11 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	color: #42a8a4;
@@ -232,7 +232,7 @@ a:hover {
 p.cdm_style { line-height: 135%; }
 
 h1.cdm_style {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	color: #333;
 	font-size: 18px;
 	font-weight: bold;
@@ -242,7 +242,7 @@ h1.cdm_style {
 }
 
 h2.cdm_style {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	color: #333;
 	font-size: 13px;
 	font-weight: bold;
@@ -252,7 +252,7 @@ h2.cdm_style {
 }
 
 h3.cdm_style {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	color: #999;
 	font-size: 13px;
 	font-weight: bold;
@@ -528,7 +528,7 @@ a#login_link, a#logout_link{color: #999; display:none !important;}
 }
 
 #nav_top_left>ul.nav li a:hover, #nav_top_left ul.nav li a.selected {
-	background-color: #333333;
+	
 	text-decoration: none;
         background-image: -webkit-linear-gradient(top, #ffffff, #e9e9e9);
     border-radius: 8px 8px 1px 1px;
@@ -601,7 +601,7 @@ a#login_link, a#logout_link{color: #999; display:none !important;}
 
 #nav_top_left_browse_dd_content {
 	width: 290px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #0066CC;
 	background-color: #FFFFFF;
@@ -659,7 +659,7 @@ a#login_link, a#logout_link{color: #999; display:none !important;}
 
 #nav_top_right_language_dd_content {
 	width: 100%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -694,7 +694,7 @@ a#login_link, a#logout_link{color: #999; display:none !important;}
 }
 
 #search_sort_by_dd_content {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -714,7 +714,7 @@ a#login_link, a#logout_link{color: #999; display:none !important;}
 
 #search_display_dd_content {
 	width: 120px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -734,7 +734,7 @@ a#search_display_dd_link:hover{text-decoration: none;}
 }
 
 #search_results_dd_content {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -771,7 +771,7 @@ a#search_display_dd_link:hover{text-decoration: none;}
 
 #reference_url_dd_content {
 	width: 80px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	background-color: #FFFFFF;
 	border: 1px solid #CCCCCC;
@@ -784,18 +784,21 @@ a#search_display_dd_link:hover{text-decoration: none;}
 /* -----------------------  Search Bar Styles  ------------------------------ */
 
 #search {
-	height: 30px;
-	background-color: #fff;
-	margin-bottom: -3px;
-	padding: 5px 20px;
-	overflow: hidden;
-	border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
-	vertical-align: middle;
+	    height: 30px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 0px 0px 0px 20px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 0px solid #ddd;
+    border-bottom: 0px solid #ddd;
+    vertical-align: middle;
 }
 
 #search_content {
 	clear: both;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	margin: 0;
 	line-height: 26px;
 	vertical-align: middle;
@@ -825,13 +828,14 @@ a#search_display_dd_link:hover{text-decoration: none;}
 #search_content_text {
 	display: inline;
 	color: #000;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: futura-pt, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
+    margin: 5px 10px 5px 5px;
 }
 
 #search_content_box {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-family: brandon-grotesque, sans-serif, sans-serif;
 	color: #000;
 }
 
@@ -866,7 +870,7 @@ a#search_display_dd_link:hover{text-decoration: none;}
 
 .search_content_button_link {
 	height: 15px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 10px;
 	color: #000000;
 	border: 0;
@@ -899,12 +903,12 @@ a#search_display_dd_link:hover{text-decoration: none;}
   margin-left: 0;
   margin-right: 10px;
   padding-right: 3px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
 }
 
 /*.search_content_button {
 	height: 18px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-weight: bold;
 	font-size: 10px;
 	text-align: center;
@@ -942,7 +946,7 @@ a#search_display_dd_link:hover{text-decoration: none;}
 }
 
 #adv_search {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: futura-pt, sans-serif;
 	background-color: #F6F6F6;
 	display: none;
 	border-bottom: solid #dddddd 2px;
@@ -1028,7 +1032,7 @@ ul.suggested_word_list { list-style-type: none; }
 a.suggested_word {
 	color: green;
 	font-size: 11px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-family: brandon-grotesque, sans-serif, sans-serif;
 }
 
 a.suggested_word_selected {
@@ -1215,7 +1219,7 @@ span.breadcrumb_text_1 {
 
 #title_desc_bar_content {
 	padding-top: 3px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-weight: bold;
 	font-size: 16px;
 }
@@ -1226,7 +1230,7 @@ span.breadcrumb_text_1 {
 /* -----------------------  Content Styles  ------------------------------ */
 
 #content_footer {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-family: brandon-grotesque, sans-serif, sans-serif;
 	background-color: #6C9;
 	height: 0px;
 	padding-left: 10px;
@@ -1234,7 +1238,7 @@ span.breadcrumb_text_1 {
 }
 
 #content_main {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-family: brandon-grotesque, sans-serif, sans-serif;
 	height: auto;
 	overflow: visible;
 }
@@ -1324,7 +1328,7 @@ button {
 }
 
 .menu_button_text, .pagination_button_text, .nav_button_text, .search_button_text,.primary_button_text, .secondary_button_text, .dialog_button_text, .tertiary_button_text, .quaternary_button_text {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	display: block;
@@ -1384,7 +1388,7 @@ table.button_table { cursor: pointer; }
 
 .pagination_button_active {
 	color: #000000;
-	background-color: #c0ec67;
+	background-color: #81e3c9;
 	border: 1px solid #42a8a4;
 	cursor: default;
 	-webkit-border-radius: 4px;
@@ -1393,7 +1397,7 @@ table.button_table { cursor: pointer; }
 }
 
 .pagination_button_text {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-weight: normal;
 	font-size: 9px;
 	padding: 0 3px;
@@ -1713,7 +1717,7 @@ input[type="button"] {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);*/
   cursor: pointer;
   *margin-left: .3em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: normal;
 }
 input[type="button"]:hover,
@@ -2016,7 +2020,7 @@ input[type="button"][disabled] {
 
 .cdm_accordion, .cdm_togglebox {
 	color: #C3C3C3;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	margin: 0;
 	border: 0 none;
@@ -2028,7 +2032,7 @@ input[type="button"][disabled] {
 }
 
 .accordion_header {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	margin: 1px 0 0 0;
@@ -2106,7 +2110,7 @@ input[type="button"][disabled] {
 	list-style: none outside none;
 	outline: 0 none;
 	text-decoration: none;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 }
 
 /*.accordionHeaderFocusBorder { border: 1px solid #d3d3d3; }*/
@@ -2132,7 +2136,7 @@ input[type="button"][disabled] {
 	background-color: #ffffff;
 	border: 1px solid #ccc;
 	color: #222222;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,;
+	font-family: brandon-grotesque, sans-serif,;
 	font-size: 1.1em;
 	overflow: hidden;
 	padding: 0.2em;
@@ -2252,7 +2256,7 @@ input[type="button"][disabled] {
 
 .tabs {
 	color: #222222;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 1em;
 }
 
@@ -2271,7 +2275,7 @@ input[type="button"][disabled] {
 	list-style: none outside none;
 	outline: 0 none;
 	text-decoration: none;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,Arial,sans-serif;
+	font-family: brandon-grotesque, sans-serif,Arial,sans-serif;
 }
 
 /*this is above the item*/
@@ -2391,7 +2395,7 @@ input[type="button"][disabled] {
 
 .cdm_full_text_search_input_text {
 	height: 1.5em;
-	font: normal 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: normal 13px brandon-grotesque, sans-serif;
 	color: #333;
 }
 
@@ -2408,7 +2412,7 @@ input[type="button"][disabled] {
 }
 
 .cdm_full_text_search_results {
-	font: normal 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: normal 13px brandon-grotesque, sans-serif;
 	color: #CD0A0A;
 }
 
@@ -2566,7 +2570,7 @@ div.co-monograph-item-wrapper { cursor: pointer; }
 }
 
 .co-content-search {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	color: #cd0a0a;
 	font-size: 10px;
 	font-weight: normal;
@@ -2696,7 +2700,7 @@ div { }
 }
 
 #lp_img_flow_caption {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #0066CC;
 	width: 400px !important;
@@ -3044,7 +3048,7 @@ div.results_tn_icon_favs_link {
 
 #details_accordion {
 	margin: 0 0 0 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 13px;
 	color: #C3C3C3;
 	border-top: 1px solid #ddd;
@@ -3056,7 +3060,7 @@ div.results_tn_icon_favs_link {
 
 #details_accordion>h3.accordion_header_active {
 	font-size: 13px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-weight: bold;
 }
 
@@ -3083,7 +3087,7 @@ div.results_tn_icon_favs_link {
 
 td.description_col1 {
 	width: 100px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+	font-family: brandon-grotesque, sans-serif;;
 	font-size: 13px;
 	font-weight: bold;
 	color: #333;
@@ -3092,7 +3096,7 @@ td.description_col1 {
 }
 
 td.description_col2 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+	font-family: brandon-grotesque, sans-serif;;
 	font-size: 13px;
 	color: #333;
 	padding-bottom: 10px;
@@ -3158,7 +3162,7 @@ a.cite_dialog_text_2 {
 #cd_accordion { max-height: 500px; }
 
 #cite_dialog_accordion {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-family: brandon-grotesque, sans-serif, sans-serif;
 	font-size: 11px;
 	color: #C3C3C3;
 	margin: 5px 18px 0 20px;
@@ -3167,7 +3171,7 @@ a.cite_dialog_text_2 {
 .cite_dialog_worldcat_details {
 	height: 60px;
 	border: 1px solid #6A7780;
-	font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+	font-family: Arial, brandon-grotesque, sans-serif, sans-serif;
 	font-size: 11px;
 	font-style: italic;
 	margin: 0 0 0 0;
@@ -3179,7 +3183,7 @@ a.cite_dialog_text_2 {
 /* -----------------------  Reference URL Dialog Styles  ------------------------------ */
 
 #reference_url_dialog {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
@@ -3200,7 +3204,7 @@ a.cite_dialog_text_2 {
 /* -----------------------  Login Dialog Styles  ------------------------------ */
 
 #login_dialog {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
@@ -3221,7 +3225,7 @@ a.cite_dialog_text_2 {
 /* -----------------------  Favorites Dialog Styles  ------------------------------ */
 
 #favorites_dialog {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;
@@ -3242,7 +3246,7 @@ a.cite_dialog_text_2 {
 
 #under_construction_dialog {
 	width: 520px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 16px;
 	padding: 15px 0 10px 0;
 	display: none;
@@ -3273,7 +3277,7 @@ a.cite_dialog_text_2 {
 #max_collections_dialog, #advanced_max_collections_dialog { display: none; }
 
 #max_collections_content, #advanced_max_collections_content {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	margin: 0 0 0 10px;
 }
@@ -3342,7 +3346,7 @@ a.cite_dialog_text_2 {
 
 #display_options_content {
 	height: 165px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 10px;
 	margin: 0 0 0 10px;
 }
@@ -3522,7 +3526,7 @@ a.cite_dialog_text_2 {
 #cdmResultsGridView .cdmResultsGridItemTextHeader, #cdmResultsGridView .cdmResultsGridItemImgHeader {
 	color: #525252;
 	font-weight: bold;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+	font-family: brandon-grotesque, sans-serif;;
 	font-size: 13px;
 }
 
@@ -3992,7 +3996,7 @@ a.co-selected-thumb-text:hover { text-decoration: none; }
 /* QUICKVIEW STYLES */
 
 .quickview_header {
-	font: bold 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: bold 13px brandon-grotesque, sans-serif;
 	margin: 0 0 10px 0;
 	color: #000000;
 	background-color: #FCFDFD;
@@ -4066,7 +4070,7 @@ div.quickview_image_col img.quickview_thumb {
 
 #print_button_options_dd_content, #download_button_options_dd_content {
 	width: 100%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -4086,7 +4090,7 @@ div.quickview_image_col img.quickview_thumb {
 
 #report_abuse_content {
 	height: 200px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 10px;
 	margin: 0 0 0 10px;
 }
@@ -4145,7 +4149,7 @@ a.cdm_disabled_link {
 	background-color: #eee !important;
 	border: 0 !important;
 	padding: 7px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-family: brandon-grotesque, sans-serif !important;
 	font-size: 13px !important;
 	color: #333 !important;
 }
@@ -4183,7 +4187,7 @@ a.cdm_disabled_link {
 #comment_results div[id*='cdm_comment']{margin-bottom: 4px; padding-top: .5em; border-top: 1px dotted #ddd;}
 
 #exportaspage_dialog {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
 	font-size: 11px;
 	padding: 10px 20px 10px 10px;
 	display: none;

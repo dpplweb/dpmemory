@@ -132,14 +132,14 @@ textarea {
 }
 body {
   /*margin: 0;*/
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
 }
 a {
-  color: #63af00;
+  color: #42a8a4;
   text-decoration: none;
 }
 a:hover {
@@ -344,7 +344,7 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -873,7 +873,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
 }
 label {
   display: block;
@@ -2774,7 +2774,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);*/
 }
 a.thumbnail:hover {
-  border-color: #63af00;
+  border-color: #42a8a4;
   /*-webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);*/

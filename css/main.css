@@ -466,7 +466,7 @@ html body span.clear {
 }
 
 #nav_top_left>ul.nav li a:hover, #nav_top_left ul.nav li a.selected {
-	background-color: #333333;
+	
 	text-decoration: none;
 }
 
