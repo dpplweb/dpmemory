@@ -342,14 +342,15 @@ a:hover {
 .container-fluid:after {
   clear: both;
 }
-p {
+p, address {
   margin: 0 0 9px;
   font-family: brandon-grotesque, sans-serif;
-  font-size: 13px;
+  font-size: 1.2em;
   line-height: 18px;
 }
+
 p small {
-  font-size: 11px;
+  font-size: 1em;
   color: #999999;
 }
 .lead {

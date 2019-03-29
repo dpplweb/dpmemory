@@ -3457,9 +3457,9 @@ a.cite_dialog_text_2 {
     display: block;
     height: 48px;
     line-height: 1.4;
-	font-size: 12px !important;
-	color: #888;
-    overflow: hidden;
+	font-size: 13px !important;
+    color: #888;
+    overflow: visible;
 }
 
 #cdmResultsBrowseAllItemsView img.results_tn_img {
