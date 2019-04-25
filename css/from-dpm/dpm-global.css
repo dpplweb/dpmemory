@@ -1,0 +1,5 @@
+/*custom styles for Des Plaines Memory Content DM site - Global styles and Home Page styles*/
+
+div#idx_wrapper table.dpm_holdings{
+  display: none !important;
+}

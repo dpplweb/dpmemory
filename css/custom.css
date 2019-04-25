@@ -15,6 +15,9 @@ Next set of changes for a rebranding and styling.
 /* -----------------------  Default Styles  ------------------------------ */
  @import url("https://use.typekit.net/mvs7qfk.css");
  @import url("style.css");
+@import url("main.css");
+@import url("bootstrap.css");
+
 
 .ui-swidget-overlay {
 	position: absolute;
